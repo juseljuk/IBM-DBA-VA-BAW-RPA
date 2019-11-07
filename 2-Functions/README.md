@@ -219,7 +219,7 @@ As you've already seen, you need to pass security credentials between services a
 
 **(1)** Get your _**IBM Cloud Function**_ **API Key** from the `Namespace Settings` option in the left side meny. There's a copy icon available to copy the key to the clipboard.
 
-![](./images/get-functions-apikey.jpg)
+![](./images/namespace.png)
 
 **(2)** In your _**Watson Assistant**_ _skill_, you will see a node called `Conversation Start`. 
 Under the 'set context' there is a variable called `$private` with the value below:
