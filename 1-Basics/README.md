@@ -43,7 +43,7 @@ Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 
 Due to time contrains in this session we will import an existing skill. This is basic IT support chatbot conversation, where we will add in the next part the integration to Business Automation Workflow.  
 
-Download the skill from this link: https://ibm.box.com/v/ibmawib-050919
+Download the skill from this link: https://ibm.box.com/v/B2B-Bank-Bot
 
 There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file in your computer and choose to import Everything.
 
