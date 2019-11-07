@@ -51,7 +51,7 @@ There's an `Import Skill` option available whenever you create a new skill - it 
 
 ![](./images/selectLite.png)
 
-![](./images/06-import-dialog-skill.jpg)
+![](./images/import_skill.png)
 
 You will be directed to the chatbot content. 
 
