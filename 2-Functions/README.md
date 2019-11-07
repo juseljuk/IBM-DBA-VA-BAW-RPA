@@ -287,8 +287,12 @@ The chatbot will gather the information needed (Company name, company number, ad
 
 This is what the conversation will look like:
 
-![](./images/1.png)
+![](./images/chat1.png)
 
-![](./images/2.png)
+![](./images/chat2.png)
 
-![](./images/3.png)
+![](./images/chat3.png)
+
+![](./images/chat4.png)
+
+The error at the end is due to the fact that you do not have the workflow yet running that your chatbot tries to call. Don't worry, we'll fix this in the next lab!
