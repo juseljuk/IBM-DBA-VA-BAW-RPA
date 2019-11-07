@@ -103,7 +103,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 ![](./images/create_assistant.png)
 
-**(3)** From here Select `Add Dialog Skill` and select your `IT Support` skill.
+**(3)** From here Select `Add Dialog Skill` and select your `B2B Bank Bot` skill.
 
 ![](./images/03-add-dialog-skill-2.jpg)
 
