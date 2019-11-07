@@ -248,9 +248,9 @@ The **only** thing you will need to replace here is `<your-get-workflow-token-en
 Just use the part **AFTER** the **.../web/*** !!!
 
 It should look something like:
-```Javascript
-name.lastname_dev/default/Get\%20Workflow\%20Token.json
-```
+
+`name.lastname_dev/default/Get%20Workflow%20Token.json`
+
 **NOTE2!**
 If your endpoint URL is missing ".json" from the end, **you need to add it!!**
 
@@ -265,9 +265,8 @@ After copying your end point to the configuration it should look similar to this
 
 Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look like:
 
-```Javascript
-name.lastname_dev/default/Start\%20Address\%20Change\%20Workflow.json
-```
+`name.lastname_dev/default/Start%20Address%20Change%20Workflow.json`
+
 ![](./images/assistant_conf_2_done.png)
 
 **NOTE!**
