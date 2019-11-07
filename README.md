@@ -1,5 +1,5 @@
 
-## AWiB Workshop
+## Haahe-Helia Digital Business Automation Workshop Exercise
 ### Use case
 Corporate customers contact details have changed. To avoid any issues on future deliveries from their key Supplier, customer initiates contact details changes via Suppliers self-service.
 
