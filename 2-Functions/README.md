@@ -206,7 +206,7 @@ Copy the Web Action URL and save it in a notepad, you will need it later. It sho
 https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Start%20Address%20Change%20Workflow
 
 
-**(7)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the BAW API that will later launch the RPA process. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
+**(7)** We've now successfully created two _**IBM Cloud Function**_ actions that can accept text as input and talk to the BAW API that will later launch the Handle Address Change workflow. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
 
 Now let's go and use our functions in _**Watson Assistant**_.
 
