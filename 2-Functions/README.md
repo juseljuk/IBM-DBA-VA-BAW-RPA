@@ -221,8 +221,9 @@ As you've already seen, you need to pass security credentials between services a
 
 ![](./images/namespace.png)
 
-**(2)** In your _**Watson Assistant**_ _skill_, you will see a node called `Conversation Start`. 
-Under the 'set context' there is a variable called `$private` with the value below:
+**(2)** In your _**Watson Assistant**_ _skill_, you will see a node called `Welcome`. Click it to open its configuration.
+
+Under the 'Then set context' there is a variable called `$private` with the value below:
 ```Javascript
 {"myCredentials":{"api_key":"<your-ibm-cloud-functions-api-key>"}}
 
@@ -230,7 +231,7 @@ Under the 'set context' there is a variable called `$private` with the value bel
 
 Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
 
-![](./images/add-credentials.jpg)
+![](./images/welcome_node_api_key.png)
 
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
