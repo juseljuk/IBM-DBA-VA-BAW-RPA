@@ -40,7 +40,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 **(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
-![](./images/create-get-token.jpg)
+![](./images/get_workflow_token.png)
 
 You'll then be transported to a code editor. Delete all of the default lines of code within the editor, and replace them with these:
 
