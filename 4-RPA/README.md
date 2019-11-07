@@ -125,7 +125,7 @@ Once the bot finishes, you should see a similar page in your IE browser window:
 
 ![](./images/after_secondrun.png)
 
-How did the know to use a valid business id (Y-tunnus) to search for Posti? This is because the variables that we had already prepared for you had a value of __15318864-4__ defined as its default value (that is used when its not otherwise set). Leave the browser window open move back to your RPA editor window.
+How did the bot know to use a valid business id (Y-tunnus) to search for Posti? This is because the variables that we had already prepared for you had a value of __15318864-4__ defined as default value for business_id variable (that is used when its not otherwise set). Leave the browser window open move back to your RPA editor window.
 
 __4.__ The robot needs to click the first search result (in the "Hakutulokset table") in order to see more detaled information about company we were searching for. Go ahead and add this action under the 4th comment row in your action list. I would do this by using the __Smart Recorder__ (as we did in the previous step), but you can choose to use __Object Cloning__ command manually as we did in the 2nd step. Your choice :) Ask your instructor to help out if needed.
 
