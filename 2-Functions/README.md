@@ -256,7 +256,7 @@ If your endpoint URL is missing ".json" from the end, **you need to add it!!**
 
 After copying your end point to the configuration it should look similar to this:
 
-![](./images/set_assistant_config2.png)
+![](./images/set_aassistant_config2.png)
 
 
 **(4)** Find the node called _**Call RPA**_ and modify your enpoint. Remember this connection calls the managed workflow that will later start the RPA process. It should look like:
