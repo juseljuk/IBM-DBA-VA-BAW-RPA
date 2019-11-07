@@ -256,7 +256,7 @@ If your endpoint URL is missing ".json" from the end, **you need to add it!!**
 
 After copying your end point to the configuration it should look similar to this:
 
-![](./images/set_assistant_config2.png)
+![](./images/set_assistant_config_2.png)
 
 
 **(4)** Find the node called _**Email given**_ (child node of Start workflow and Email notification) and click it to open its configuration.
