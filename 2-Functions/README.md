@@ -38,7 +38,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 ![](./images/10-create-action.jpg)
 
-**(3)** Call your new action `Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
+**(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
 ![](./images/create-get-token.jpg)
 
@@ -75,25 +75,29 @@ var options = {
 };
 
 // Make sure you replace XXXX with your port number
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?port=XXXX';
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?port=XXXXX';
 
   try {
+    
     let response = await needle(URL,headers,options);
     var token = response.body.csrf_token;
-    return {token};
+    var call_result = {
+        "token": token,
+        "status": "Success"
+    }
+    return {token: token, status: "Success"};
 
   } catch (err) {
     console.log(err)
     return Promise.reject({
       statusCode: 500,
       headers: { 'Content-Type': 'application/json' },
-      body: { message: err.message },
+      body: { message: err.message, status: "Failed" },
     });
     console.log("error test");
   }
 }
-exports.main = main;
- 
+exports.main = main; 
 ```
 
 This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token. 
