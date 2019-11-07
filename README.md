@@ -40,7 +40,7 @@ Login to your ``Virtual Machine``, using the instructions handed out to you by y
 - [LAB 3: Business Automation Workflow](./3-Baw)
 - [LAB 4: Robotic Process Automation](./4-RPA)
   
-## Summary
+## Putting it all together!
 - [LAB 5: Our system in action](./5-Summary)
 
-If you manage to finish all the labs, ask your instructor to help you to run the hole solution together!
+If you manage to finish the labs 1 to 4, ask your instructor to help you to run the hole solution together!
