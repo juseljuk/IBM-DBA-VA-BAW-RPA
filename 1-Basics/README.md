@@ -85,7 +85,7 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
-You will be able to test the integration with the Business Automation Workflow once you get through the next 3 labs using the _**Osoitteenmuutos**_ option. :smile:
+You will be able to test the integration with the Business Automation Workflow once you get through the next 3 labs using the _**Address Change**_ option. :smile:
 
 ## Build a web based chat interface - OPTIONAL
 
