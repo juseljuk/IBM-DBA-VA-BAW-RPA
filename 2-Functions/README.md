@@ -259,15 +259,24 @@ After copying your end point to the configuration it should look similar to this
 ![](./images/set_assistant_config2.png)
 
 
-**(4)** Find the node called _**Call RPA**_ and modify your enpoint. Remember this connection calls the managed workflow that will later start the RPA process. It should look like:
+**(4)** Find the node called _**Email given**_ (child node of Start workflow and Email notification) and click it to open its configuration.
+
+![](./images/email_given.png)
+
+Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look like:
 
 ```Javascript
 name.lastname_dev/default/WorkflowCall.json
 ```
-![](./images/wa-function-rpacall.jpg)
+![](./images/assistant_conf_2_done.png)
 
+**NOTE!**
+Just use the part **AFTER** the **.../web/*** !!!
 
-Fantastic! Continue with lab 3 to get started with the Robotic Process Automation part. Once you have the next labs running you will be able to call it from your chatbot. 
+**NOTE2!**
+If your endpoint URL is missing ".json" from the end, **you need to add it!!**
+
+Fantastic! Continue with lab 3 to get started with the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow and your RPA bot it from your Watson Assistant chatbot! 
 
 
 ## Summary
