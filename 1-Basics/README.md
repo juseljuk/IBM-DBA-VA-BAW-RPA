@@ -55,13 +55,13 @@ There's an `Import Skill` option available whenever you create a new skill - it 
 
 You will be directed to the chatbot content.
 
-![](./images/bank_bot_overview.png)
-
-**(2)** Explore the chatbot dialog _**Dialog**_.
+**(2)** Explore the chatbot content.
 
 An _**intent**_ represents the purpose of a user's input. By recognising the intent expressed by a user, Watson Assistant can choose the correct dialog flow to use to respond to it. To plan the intents for your application, you need to consider what your chatbot users might want to do, and what you want your application to be able to handle.
 
-![](./images/intents1.jpg)
+For this assistant we have currently implemented just one intent: #haluaa_ilmoittaa_osoitteenmuutoksesta (for understanding that the customer wants to notify us of address change).
+
+![](./images/bank_bot_overview.png)
 
 An _**entity**_ represents a term or object in the user's input that provides **context** for a particular _intent_. If _intents_ represent _verbs_ (something a user wants to do), _entities_ represent _nouns_ (such as the object of, or the context for, an action).
 
