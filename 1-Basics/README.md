@@ -101,7 +101,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 **(2)** Add a **Name** and **Description** for your _Assistant_, and select `Create`.
 
-![](./images/add-assistant1.jpg)
+![](./images/create_assistant.png)
 
 **(3)** From here Select `Add Dialog Skill` and select your `IT Support` skill.
 
