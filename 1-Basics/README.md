@@ -53,7 +53,9 @@ There's an `Import Skill` option available whenever you create a new skill - it 
 
 ![](./images/import_skill.png)
 
-You will be directed to the chatbot content. 
+You will be directed to the chatbot content.
+
+![](./images/bank_bot_overview.png)
 
 **(2)** Explore the chatbot dialog _**Dialog**_.
 
@@ -76,7 +78,7 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 ## Test your chatbot
 **(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester:
 
-![](./images/try-it1.png)
+![](./images/bank_bot_try_it.png)
 
 **(2)** Try and test all of your _dialog_ branches. It'll look something like this:
 
