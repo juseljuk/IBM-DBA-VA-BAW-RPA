@@ -210,6 +210,10 @@ https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Start%20Add
 
 Now let's go and use our functions in _**Watson Assistant**_.
 
+If you are still in Actions, click **Functions** to get to your main Functions page.
+
+![](./images/back_to_functions.png)
+
 ## Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
 As you've already seen, you need to pass security credentials between services and applications in order to use them. In order to call _**IBM Cloud Functions**_ from within _**Watson Assistant**_ _dialogs_ we need to understand their credentials and encode them correctly.
 
