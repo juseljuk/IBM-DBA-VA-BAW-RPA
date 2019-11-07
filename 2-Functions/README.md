@@ -1,7 +1,7 @@
-# _**Watson Assistant Lab 2**_: Integrating Business Automation Workflow (BAW) with Watson Assistant
-In this lab we're going to show how you can extend your chatbot with a IBM Business Automation Workflow environment and Robotic Process Automation using _**IBM Cloud Functions**_.
+# _**Watson Assistant Lab 2**_: Using IBM Cloud Functions to integrate Watson Assistant with Business Automation Workflow (BAW)
+In this lab we're going to show how you can extend your Watson Assistant chatbot with a IBM Business Automation Workflow (BAW) environment and Robotic Process Automation using _**IBM Cloud Functions**_.
 
-In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the BAW and then RPA (Robotic Process Automation) and return a response based on the success of the address change. 
+In practical terms, we'll define _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the BAW and then RPA (Robotic Process Automation) and return a response based on the success of the address change. 
 
 ## Requirements
 - IBM Cloud account 
@@ -249,7 +249,7 @@ Just use the part **AFTER** the **.../web/*** !!!
 
 It should look something like:
 ```Javascript
-name.lastname_dev/default/Token.json
+name.lastname_dev/default/Get%20Workflow%20Token.json
 ```
 **NOTE2!**
 If your endpoint URL is missing ".json" from the end, **you need to add it!!**
@@ -266,7 +266,7 @@ After copying your end point to the configuration it should look similar to this
 Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look like:
 
 ```Javascript
-name.lastname_dev/default/WorkflowCall.json
+name.lastname_dev/default/Start%20Address%20Change%20Workflow.json
 ```
 ![](./images/assistant_conf_2_done.png)
 
