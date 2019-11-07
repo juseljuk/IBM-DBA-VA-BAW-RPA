@@ -116,13 +116,13 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
-https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/Token.json
+https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Get%20Workflow%20Token 
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
 ![](./images/go-back-actions.png)
 
-Then repeat the previous process. Create new action called: **WorkflowCall** and paste the following code:
+Then repeat the previous process. Create new action called: **Start Address Change Workflow** and paste the following code:
 
 ```Javascript
 /**
