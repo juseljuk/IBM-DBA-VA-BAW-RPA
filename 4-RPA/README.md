@@ -63,10 +63,11 @@ On the right-hand side you will see a few bars, we are intrested on ``Variable M
 
 Here we have defined a few variables you will need:  
 
-``business_id``, the business_id (y-tunnus) that our customer originally told to our chatbot,  
-``street_address``, that we will use to save the street address info we get from ytj.fi,
-``postcode``, that we will use to save the postcode info we get from ytj.fi and
-``city``, that we will use to save the ciry info we get from ytj.fi.
+- ``business_id``, the business_id (y-tunnus) that our customer originally told to our chatbot,  
+- ``street_address``, that we will use to save the street address info we get from ytj.fi,
+- ``name``, that we will use to save the business name info we get from ytj.fi,
+- ``postcode``, that we will use to save the postcode info we get from ytj.fi and
+- ``city``, that we will use to save the ciry info we get from ytj.fi.
    
 ### Implementing the bot
 __1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below __the first comment line__. Drop the command __on the__ 1st comment line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
@@ -155,7 +156,7 @@ That's why we have already implemented a "data extraction bot" that you can use 
 ![](./images/add_runtask.png)
 
 - When Run Task configuration window open click __Browse__ to select the above mentioned helper task (AWiB --> Helpers --> Extract Data from YTJ HTML Table.atmx).
-- Then click the __Variable__ option selection and press __Quick Map__ button to map variables beetween the task bot we're now implementing and the helper bot. Click __OK__ when the message box is shown. Your Run Task configuration window should look like this:
+- Then click the __Variable__ option selection and press __Quick Map__ button to map variables beetween the task bot we're now implementing and the helper bot. Click __OK__ when the message box is shown. You should have 5 variables mapped. Your Run Task configuration window should look like this:
 
 <img src="./images/conf_runtask.png" width="50%">
 
