@@ -44,9 +44,9 @@ Settings we would normally need to set on the ``Robot task`` **NOTE!**: everythi
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
 When you open an ``UI node / Human task activity`` (Validate data), the so called ``coach designer`` opens. Here you can implement your human taks in form of UIs (pages with whatever content) and logical screen flow between them.
-1. Clik the ``UI node`` (Validate data)
+1. Clik the ``User Task activity`` (Validate data) to select it.
 2. From the ``Implementation``tab (at the properties section bottom part of the screen) open the implementation file (Validate data CSHS) by clicking it.
-3. Open the ``Diagram`` tab (if not opened automatically) to observe the screenflow we have built. You test the UI from the top-right corner by pressing the run icon.
+3. Open the ``Diagram`` tab (if not opened automatically) to observe the screenflow we have built. You can test the UI from the top-right corner by pressing the run icon.
 4. You now see what the user form looks like.
 
 ![](./images/Form_Workflow.gif)  
