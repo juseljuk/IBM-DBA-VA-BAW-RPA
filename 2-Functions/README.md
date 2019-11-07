@@ -203,7 +203,7 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
-https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/WorksflowCall.json
+https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Start%20Address%20Change%20Workflow
 
 
 **(7)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the BAW API that will later launch the RPA process. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
