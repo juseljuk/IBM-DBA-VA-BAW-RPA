@@ -41,6 +41,6 @@ Login to your ``Virtual Machine``, using the instructions handed out to you by y
 - [LAB 4: Robotic Process Automation](./4-RPA)
   
 ## Putting it all together!
-- [LAB 5: Our system in action](./5-Summary)
+- [LAB 5: Our system in action](./5-Final)
 
 If you manage to finish the labs 1 to 4, ask your instructor to help you to run the hole solution together!
