@@ -137,7 +137,7 @@ After you're done the page in your IE browser should look like this:
 
 ![](./images/actionlist2.png)
 
-__NOTE!__ The Object Cloning command records many different attributes for the object that it recognizes. Some times we need to check which of the object attributes it has recorder and, in order to make our bot dynamic (work with any values within the object attributes), we need to remove some of the values that the command uses to recognize the object.
+__NOTE!__ The Object Cloning command records many different attributes for the object that it recognizes. Some times we need to check which of the object attributes it has recorded and, in order to make our bot dynamic (work with any values within the object attributes), we need to remove some of the values that the command uses to recognize the object.
 
 - Double click the added Object Cloning command to open its configuration window.
 - __Uncheck__ the last two (``HTML InnerText`` and ``HTML Ref``) search criteria by clicking the "binocular" icon besides them so that "binoculars" disappear. We're doing this since these values are specific for a link of a specific business id. We want our object recognition to work what ever business id is present in the link! Your configuration should look like this:
