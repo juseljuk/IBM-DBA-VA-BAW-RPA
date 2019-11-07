@@ -65,7 +65,7 @@ For this assistant we have currently implemented just one intent: #haluaa_ilmoit
 
 An _**entity**_ represents a term or object in the user's input that provides **context** for a particular _intent_. If _intents_ represent _verbs_ (something a user wants to do), _entities_ represent _nouns_ (such as the object of, or the context for, an action).
 
-![](./images/entities1.jpg)
+![](./images/entities.png)
 
 _**Watson Assistant**_ can also recommend _**synonyms**_ for your _**entity**_ values. The recommender finds related _synonyms_ based on contextual similarity extracted from a vast body of existing information, and uses natural language processing techniques to identify words similar to the existing _synonyms_ in your _entity_ value.
 
@@ -74,11 +74,10 @@ You can also use _**pattern matching**_ when creating _entity_ values. This is r
 
 A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user's input, plus _context_ from the application that uses _**Watson Assistant**_, to interact with the user and ultimately provide a useful response. Our _dialog_ tree should help the user choose a new mobile phone based on an existing preference or a characteristic important to the user.
 
+![](./images/bank_bot_try_it.png)
 
 ## Test your chatbot
-**(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester:
-
-![](./images/bank_bot_try_it.png)
+**(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester.
 
 **(2)** Try and test all of your _dialog_ branches. It'll look something like this:
 
