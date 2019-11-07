@@ -199,7 +199,7 @@ Now hit `Save`.
 
 Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `Save`.
 
-![](./images/17-enable-as-web-action.jpg)
+![](./images/web_action_workflow_token.png)
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
