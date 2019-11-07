@@ -120,9 +120,9 @@ https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Get%20Workf
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
-![](./images/go-back-actions.png)
+![](./images/back_to_actions.png)
 
-Then repeat the previous process. Create new action called: **Start Address Change Workflow** and paste the following code:
+Then repeat the previous process. Create (click "Create" button) new action called: **Start Address Change Workflow** and paste the following code:
 
 ```Javascript
 /**
