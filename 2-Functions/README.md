@@ -236,16 +236,25 @@ Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in 
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
 
-**(3)** Even though the main conversation is in English we created this path in Finnish to prove Watson Assistant language capabilities. 
+**(3)** Find the node called _**Get Workflow Token**_ and click to open its configuration.
 
-Find the node called _**Get Token**_ and click on it.
+![](./images/set_assistant_get_workflow_token.png)
 
-The **only** thing you will need to replace here is `<my-Token-endpoint>`. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
+Click the `gear symbol` to open the response editor.
+
+The **only** thing you will need to replace here is `<your-get-workflow-token-endpoint>` with the endpoint information you copied for your Get Workflow Token action. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
+
+**NOTE!**
+Just use the part **AFTER** the **.../web/*** !!!
 
 It should look something like:
 ```Javascript
 name.lastname_dev/default/Token.json
 ```
+**NOTE2!**
+If your endpoint URL is missing ".json" from the end, **you need to add it!!**
+
+After copying your end point to the configuration it should look similar to this:
 
 ![](./images/wa-function-token.jpg)
 
