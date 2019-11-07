@@ -176,12 +176,14 @@ Your action list for your bot should now look like this:
 
 __7.__ Congrats! All done!
 
-Please __remember to save you bot__. If you want, you can now test it one more time. Just remember to close the IE browser window first.
+Please __remember to save you bot__. If you want, you can now test it one more time. Just remember to close the IE browser always before starting your bot again.
 
 If you want, you can test your bot with some other business ids as well :) Try for example these:
 - 1475607-9
 - 1927400-1
 - 1539240-6
+
+Got to variable manager, double-click `business_id` variable and set the desired default value you want to test!
 
 ### Help
 I can't select ytj.fi to my ``Object clone``   
