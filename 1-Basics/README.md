@@ -99,7 +99,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 ![](./images/01-create-assistant.jpg)
 
-**(2)** Add a **Name** and **Description** for your _Assistant_, and select `Create`.
+**(2)** Add a **Name** and **Description** for your _Assistant_, and select `Create assistant`.
 
 ![](./images/create_assistant.png)
 
