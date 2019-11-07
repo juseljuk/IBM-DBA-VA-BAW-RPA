@@ -40,7 +40,7 @@ By clicking a node - also called as an ``activity`` or a ``step`` of a workflow)
 
 Settings we would normally need to set on the ``Robot task`` **NOTE!**: everything in the workflow and within its activities is already configured, so don't change anything.
 - **General** Give name and if you want, also color for the activity. 
-- **Implementation** Here you choose the type of the node, and if it is an ``Robot task``you would need to press **Generate bot...** to create a bot definition file that you can later on use to implement the actual RPA bot.  
+- **Implementation** Here you choose the type of the activity, and if it is an ``Robot task``you would need to press **Generate bot...** to create a bot definition file that you can later on use to implement the actual RPA bot. You do not need to do it now.
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
 When you open an ``UI node / Human task activity`` (Validate data), the so called ``coach designer`` opens. Here you can implement your human taks in form of UIs (pages with whatever content) and logical screen flow between them.
