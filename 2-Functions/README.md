@@ -104,7 +104,7 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 **(4)** You only need to make a small change to this code.
 
-- Replace `port=XXXX` with the value of your environment port.
+- Replace `port=XXXX` with the value of your environment port. Note that your port number might be 4 or 5 numbers long.
 
 Now hit `Save`.
 
@@ -193,7 +193,7 @@ This code will use the authentication token from the previous action and call th
 
 **(6)** You only need to make a small change to this code.
 
-- Replace `port=XXXX` with the value of your environment port.
+- Replace `port=XXXX` with the value of your environment port. Note that your port number might be 4 or 5 numbers long.
 
 Now hit `Save`.
 
