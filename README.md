@@ -28,12 +28,12 @@ All contact and validation information collected during the process (company nam
 
 
 ## Assistant
-In this part we create the **Chatbot** and edit it so that it can communicate with Cloud Functions.
+In this part we create our **Virtual Assistant / Chatbot** by importing a B2B Banking _skill_ to our Watson Assistant service. We also take a look at how our chatbot has been constructed and we can also test it out.
  - [LAB 1: Cognitive Chatbot Basics](./1-Basics)
 
 ## Connecting Chatbot to IBM Business Automation Workflow
-This connects the backends of the chatbot and a workflow so that they can communicate together. With this we are able to trigger a new workflow and send the inputs from the chatbot to it. 
-  - [LAB 2: Integrating BAW with Watson Assistant](./2-Functions)    
+Here we connect our chatbot to our managed workflow, so that our chatbot can trigger a new managed workflow instance when done collecting information from the banks corporate user. We will use IBM Cloud Function (serverless computing services) _actions_ to achieve this.
+  - [LAB 2: Integrating Watson Assistant with BAW](./2-Functions)    
  
 ## Automation
 Login to your ``Virtual Machine``, using the instructions handed out to you by your instructors.
