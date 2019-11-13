@@ -1,5 +1,5 @@
-# _**Watson Assistant Lab 1**_: Cognitive Chatbot Basics
-In this lab we'll start to build a chatbot using _**Watson Assistant**_. This basic chatbot is a banking bot that will help the user with things like making a credit card payment or choosing a credit card. 
+# **Lab 1**: Cognitive Chatbot Basics
+In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help the user with things like making a credit card payment or choosing a credit card. 
 
 ## Requirements
 - [IBM Cloud account](https://cloud.ibm.com/)
