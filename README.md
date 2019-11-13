@@ -37,7 +37,7 @@ This connects the backends of the chatbot and a workflow so that they can commun
  
 ## Automation
 Login to your ``Virtual Machine``, using the instructions handed out to you by your instructors.
-- [LAB 3: Business Automation Workflow](./3-Baw)
+- [LAB 3: Business Automation Workflow](./3-BAW)
 - [LAB 4: Robotic Process Automation](./4-RPA)
   
 ## Putting it all together!
