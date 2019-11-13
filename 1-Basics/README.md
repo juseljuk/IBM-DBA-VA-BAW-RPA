@@ -1,5 +1,5 @@
 # **Lab 1**: Cognitive Chatbot Basics
-In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help the user with things like making a credit card payment or choosing a credit card. 
+In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help banks corporate users to change their address information. 
 
 ## Requirements
 - [IBM Cloud account](https://cloud.ibm.com/)
@@ -9,7 +9,7 @@ In this lab we'll start to build a chatbot / virtual assistant using _**Watson A
 - Setup the **_Watson Assistant_** service
 - Import basic Watson Assistant skill
 - Test your chatbot
-- Build a web based chat interface for your chatbot (Optional)
+- Enable a web based chat interface for your chatbot (Optional)
 
 ## Introduction to Watson Assistant
 IBM **_Watson Assistant_** allows you to create cognitive chatbots that you can customise for your business, and deploy them across multiple channels to bring help to your customers where and when they need it.
