@@ -21,7 +21,7 @@ All information collected during the process are provided to workflow handler in
 - [Assistant](#assistant)
 - [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow)
 - [Automation](#automation)
-- [Summary](#putting-it-all-together!)  
+- [Putting it all together!](#putting-it-all-together)  
 
 #### Prerequisites
 - [IBM Cloud](https://cloud.ibm.com) Account
