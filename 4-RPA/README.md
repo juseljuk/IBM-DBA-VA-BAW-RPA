@@ -1,4 +1,4 @@
-## Welcome to the RPA workshop
+# **Lab 4: Robotic Process Automation**
 If the other sections where mainly reading and viewing already done elements, now you will get to create your own working bot with _Robotic Process Automation_ platform (IBM RPA with Automation Anywhere).  
 
 What this ``bot`` should do:
