@@ -33,7 +33,7 @@ In this part we create our **Virtual Assistant / Chatbot** by importing a B2B Ba
 
 ## Connecting Chatbot to IBM Business Automation Workflow
 Here we connect our chatbot to our managed workflow, so that our chatbot can trigger a new managed workflow instance when done collecting information from the banks corporate user. We will use IBM Cloud Function (serverless computing services) _actions_ to achieve this.
-  - [LAB 2: Integrating Watson Assistant with BAW](./2-Functions)    
+  - [LAB 2: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)](./2-Functions)    
  
 ## Automation
 Login to your ``Virtual Machine``, using the instructions handed out to you by your instructors.
