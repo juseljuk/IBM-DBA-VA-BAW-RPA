@@ -1,4 +1,4 @@
-# **Lab 2**: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)
+# **Lab 2: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)**
 In this lab we're going to show how you can extend your Watson Assistant chatbot with a IBM Business Automation Workflow (BAW) environment and Robotic Process Automation using _**IBM Cloud Functions**_.
 
 In practical terms, we'll define _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the BAW and then RPA (Robotic Process Automation) and return a response based on the success of the address change. 
