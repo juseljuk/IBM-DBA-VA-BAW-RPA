@@ -1,4 +1,4 @@
-# **Lab 1**: Cognitive Chatbot Basics
+# **Lab 1: Cognitive Chatbot Basics**
 In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help banks corporate users to change their address information. 
 
 ## Requirements
