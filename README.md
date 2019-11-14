@@ -1,12 +1,13 @@
 
 # IBM Digital Business Automation Workshop Exercise - How to combine different automation capabilities
 ### Use case
-Corporate customers contact details have changed. To avoid any issues on future deliveries from their key Supplier, customer initiates contact details changes via Suppliers self-service.
+Banks corporate customers address details have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in oder to notify bank of the address change.
 
-Supplier utilizes AI to collect changed information from Corporate customer in a chatbot dialog. After all valid information has been collected (company name, address, phone number, etc...) - chatbot initiates a business workflow that orchestrates the actual information change into Suppliers system.  
+Bank utilizes AI (**IBM Watson Assistant service**) to collect the changed address information from the customer in a chatbot dialog. After all valid information has been collected (business id, company name, address, phone number, etc...) - virtual assistant initiates a managed business workflow that orchestrates the actual information change into Banks CRM system.  
 
-Workflow utilizes both automated and manual tasks to finalize the contact details change. Robotic Process Automation (RPA) is used to supplement and validate company details given by customer from ytj.fi service.  
-All contact and validation information collected during the process (company name, address, phone number, Business ID, etc...) are provided to workflow handler in modern UI, where handler can check the information provided by the customer matches the one got from ytj.fi and then decide to accept or decline the new address information.
+Workflow utilizes both automated and manual tasks to finalize the address details change. _Robotic Process Automation (RPA)_ is used to supplement and validate the company details given by the customer from **ytj.fi*** (public corporate information service) web site.
+
+All information collected during the process are provided to workflow handler in modern UI, where handler can check that the information provided by the customer matches the one got from ytj.fi and then decide to accept or decline the new address information.
 
 ![](./Images/overall.png)
 
