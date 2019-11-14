@@ -5,7 +5,7 @@ Banks corporate customers address details have changed. Since the bank is provid
 
 Bank utilizes AI (**IBM Watson Assistant service**) to collect the changed address information from the customer in a chatbot dialog. After all valid information has been collected (business id, company name, address, phone number, etc...) - virtual assistant initiates a managed business workflow that orchestrates the actual information change into Banks CRM system.  
 
-Workflow utilizes both automated and manual tasks to finalize the address details change. _Robotic Process Automation (RPA)_ is used to supplement and validate the company details given by the customer from **ytj.fi*** (public corporate information service) web site.
+Workflow utilizes both automated and manual tasks to finalize the address details change. _Robotic Process Automation (RPA)_ is used to supplement and validate the company details given by the customer from **ytj.fi** (a public corporate information service) web site.
 
 All information collected during the process are provided to workflow handler in modern UI, where handler can check that the information provided by the customer matches the one got from ytj.fi and then decide to accept or decline the new address information.
 
