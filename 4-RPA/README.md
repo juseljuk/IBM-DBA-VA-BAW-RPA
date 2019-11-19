@@ -84,16 +84,16 @@ When the Open Browser configuration window opens, type in ``https://www.ytj.fi/e
 
 You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward.
 
-First, click __Save__ on the editor window and then __Run__ to test your bot. __NOTE!__ When you click "Run", the RPA platform will take over your controls (mouse and keyboard). Make sure not to touch anything when the bot is running or you might interfere its operation.
+First, click __Save__ on the editor window and then __Run__ to test your bot. __NOTE!__ When you click "Run", the RPA platform will take over your controls (mouse and keyboard). ``Make sure not to touch anything when the bot is running or you might interfere its operation.``
 
 ![](./images/save_run1.png)
 
 Your bot should run and YTJ web page should be opened in Internet Explorer (IE). Bot stops automatically. If you see a pop-up in IE about some security preferences, click "Ask me later" to close the pop-up. Nice! Your first RPA run :) __Make sure to leave the YTJ web site open!!__
 
-__2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id variable value to it.
+__2.__ Next we add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id variable value to it.
 
 - Back in RPA editor window, drag and drop ``Object Cloning`` command under the second comment line.
-- When the configuration window opens, select "YTJ - Etusivu - Internet Explorer" for the Select Window -configuration.
+- When the configuration window opens, select __"YTJ - Main page - Internet Explorer"__ for the Select Window -configuration.
 - Next click __Capture__ button __and keep your mouse button pressed down!__
 - While keeping your mouse button down, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Hae yrityksen nimellä tai Y-tunnuksella) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
 - When the configuration window opens, select __Set Text__ to "Select action to perform".
@@ -101,7 +101,7 @@ __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj
 - Press __Function + F2__ [Fn+F2] to bring up "Insert variable" window, select __business_id__ and click "Insert".
 - Click "Save" on the Object Cloning window and finally also in the editor window to save your bot.
 
-![](./images/select_searchBar.gif)
+![](./images/object_cloning_search.gif)
 
 Your action list in the editor should now be similar to this:
 
