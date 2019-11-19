@@ -4,7 +4,7 @@ If the other labs of this exercise were mainly reading through and viewing alrea
 What this ``bot`` should do:
 1. Wait for a task assigment (Get info from YTJ) from the workflow (Handle data change) that is triggered from our _Cloud Functions_ within our Watson Assistant chatbot.
 2. Receive the business_id (y-tunnus) from the workflow.
-3. Navigate to _ytj.fi/en_ web site and create a search with the given business_id.
+3. Navigate to _ytj.fi_ web site and create a search with the given business_id.
 4. Gather the address information from the search result.
 5. Send the gathered information back to our workflow that automatically forwards it to the next task in the workflow (User validation).
 
@@ -44,22 +44,24 @@ We have already created a skeleton implementation for you to get started. Move t
 
 Files in this directory:  
 **Get info from YTJ**   
-This is our main RPA task bot that will be run, when our workflow will be started and when RPA task (Get info from YTJ) is triggered. Notice, that this task bot is named exactly like our RPA task in our workflow. This task bot was generated using the bot definition file downloaded from the workflow.
+This is our main RPA task bot that will be run, when our workflow will be started and when its first activity, RPA task (Get info from YTJ), is triggered. Notice, that this task bot is _named exactly like our RPA task in our workflow_. The task bot was generated using the bot definition file downloaded from the workflow.
 
 **Loop over IBM Business Automation Workflow tasks**  
 This is what we call a "system bot". When this is started, it automatically connects to workflow environment (BAW) to check if there are some RPA tasks waiting to be done and if so, it will run ``Get info from YTJ`` task bot. The system bot is provided by the RPA platform, so you do not to build it yourself. Once it's started, it is configured to poll our workflow environment from time to time and when it finds something to do, it will run the main task bot (Get info from YTJ in our scenario).
 
 **YTJ implementation** .
-This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly into Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
+This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. Our main task bot ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly into Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
 ### Editing the bot
 Open the _YTJ implementation.atmx_ to __editor window__ (right-click --> Edit).
 
-On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object Cloning``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
+On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object Cloning``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable commands to build your RPA bots.
 
-If you double-click a command it will be added to your bots Action List. If you add something by accident, you can delete a command by right-clicking it and selecting "Delete".
+If you double-click a command it will be added to your bots Action List under the action that is highlighted. If you add something by accident, you can delete a command by right-clicking the action and selecting "Delete".
 
 On the right-hand side you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
+
+![](./images/variables.png)
 
 Here we have defined a few variables you will need:  
 
@@ -69,20 +71,22 @@ Here we have defined a few variables you will need:
 - ``postcode``, that we will use to save the postcode info we get from ytj.fi and
 - ``city``, that we will use to save the ciry info we get from ytj.fi.
 
+Some of the variables (_my-list-variable_ and _Prompt-Assignment_) are automatically created by the editor.
+
 ### Implementing the bot
 __1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below __the first comment line__. Drop the command __on the__ 1st comment line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
 
-![](./images/command1.png)
+![](./images/command1_new.png)
 
-When the Open Browser configuration window opens, type in ``https://www.ytj.fi`` to "Step 1: URL to Open" and click __Save__.
+When the Open Browser configuration window opens, type in ``https://www.ytj.fi/en`` to "Step 1: URL to Open" and click __Save__.
 
-<img src="./images/conf_openbrowser.png" width="50%">
+<img src="./images/conf_openbrowser_new.png" width="50%">
 
 You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward.
 
 First, click __Save__ on the editor window and then __Run__ to test your bot. __NOTE!__ When you click "Run", the RPA platform will take over your controls (mouse and keyboard). Make sure not to touch anything when the bot is running or you might interfere its operation.
 
-![](./images/start_stop.JPG)
+![](./images/save_run1.png)
 
 Your bot should run and YTJ web page should be opened in Internet Explorer (IE). Bot stops automatically. If you see a pop-up in IE about some security preferences, click "Ask me later" to close the pop-up. Nice! Your first RPA run :) __Make sure to leave the YTJ web site open!!__
 
