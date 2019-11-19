@@ -149,7 +149,7 @@ __NOTE!__ The Object Cloning command records many different attributes for the o
 - Double click the added Object Cloning command to open its configuration window.
 - __Uncheck__ the last two (``HTML InnerText`` and ``HTML Ref``) search criteria by clicking the "binocular" icon besides them so that "binoculars" disappear. We're doing this since these values are specific for a link of a specific business id. We want our object recognition to work what ever business id is present in the link! Your configuration should look like this:
 
-<img src="./images/uncheck.png" width="50%">
+<img src="./images/uncheck_new.png" width="50%">
 
 - __Save__ your Object Cloning configuration and your bot.
 
