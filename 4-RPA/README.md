@@ -110,25 +110,25 @@ Your action list in the editor should now be similar to this:
 __3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :) ``Before you start, make sure that you have the third (3.) comment row selected in your editor's action list.``
 
 - Click the __"Record"__ button / icon on your editor (between "New" and "Run" on the top section of the editor window).
-- Select __YTJ - Main page - Internet Explorer__ as the window you wnat to use for recording and click "Start".
+- Select __YTJ - Main page - Internet Explorer__ as the window to use for recording and click "Start".
 - You should now see the YTJ web site within your browser and additional small "Recording" window on the top of it with controls to Pause and Stop the recording.
 <img src="./images/recorder.png" width="30%">
 
-- Move your mouse cursor over the "Search" button / icon and click it as you normally would.
+- Move your mouse cursor over the "Search" button / icon and ``click`` it as you normally would.
 <img src="./images/searchclick_new.png" width="50%">
 
 - You should see the web page changing. Click __Stop__ on the small Recording window. This will stop the recording and bring the RPA editor window forward again.
 - Notice that a new Object Cloning command has been added under the third comment row.
 
-![](./images/after_searchclick.png)
+![](./images/after_searchclick_new.png)
 
 __Save__ your work. Then go ahead and __close__ your IE browser window! This is because next we will test and __Run__ our bot again and if there's an old browser window open with the same name, our bot might get confused.
 
-Once you have closed your IE, run your bot by clicking the "Run" button / icon on the editor. Hands off! Remember, when the bot is running, it's actually using the same controls (mouse and keyboard) that you are!
+Once you have closed your IE, run your bot by clicking the __"Run"__ button / icon on the editor. _Hands off! Remember, when the bot is running, it's actually using the same controls (mouse and keyboard) that you are!_
 
 Once the bot finishes, you should see a similar page in your IE browser window:
 
-![](./images/after_secondrun.png)
+![](./images/after_secondrun_new.png)
 
 How did the bot know to use a valid business id (Y-tunnus) to search for Posti? This is because the variables that we had already prepared for you had a value of __15318864-4__ defined as default value for business_id variable (that is used when its not otherwise set). Leave the browser window open move back to your RPA editor window.
 
