@@ -61,7 +61,7 @@ If you double-click a command it will be added to your bots Action List under th
 
 On the right-hand side you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
 
-![](./images/variables.png)
+<img src="./images/variables.png" width="50%">
 
 Here we have defined a few variables you will need:  
 
