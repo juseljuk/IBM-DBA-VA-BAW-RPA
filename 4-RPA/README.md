@@ -153,18 +153,18 @@ __NOTE!__ The Object Cloning command records many different attributes for the o
 
 - __Save__ your Object Cloning configuration and your bot.
 
-__5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to conduct the search, we need to make our data extraction dynamic and that takes a bit more time.
+__5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id that we are using to conduct the search (different companies may have different amount of data), we need to make our data extraction dynamic and that takes a bit more time.
 
-That's why we have already implemented a "data extraction bot" that you can use to do data extraction for you. It's located under the AWiB folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
+That's why we have already implemented a "data extraction bot" that you can use to do data extraction for you. It's located under the IBM DBA with Virtual Agent folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
 
 - Add __Run Task__ command to your RPA editors action list, under the 5th comment row.
 
-![](./images/add_runtask.png)
+![](./images/add_runtask_new.png)
 
-- When Run Task configuration window open click __Browse__ to select the above mentioned helper task (AWiB --> Helpers --> Extract Data from YTJ HTML Table.atmx).
+- When Run Task configuration window open click __Browse__ to select the above mentioned helper task (IBM DBA with Virtual Agent --> Helpers --> Extract Data from YTJ HTML Table.atmx).
 - Then click the __Variable__ option selection and press __Quick Map__ button to map variables beetween the task bot we're now implementing and the helper bot. Click __OK__ when the message box is shown. You should have 5 variables mapped. Your Run Task configuration window should look like this:
 
-<img src="./images/conf_runtask.png" width="50%">
+<img src="./images/conf_runtask_new.png" width="50%">
 
 - Finally click __Save__ on the Run Task configuration windows to save the Run Task command to our bots action list.
 
