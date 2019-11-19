@@ -12,8 +12,8 @@ What this ``bot`` should do:
 - [Setup](#setup)
 - [Launch RPA](#launch-rpa)
 - [RPA implementation artifacts](#rpa-implementation-artifacts)
-- [Editing the bot](#editing-the-bot) 
-- [Implementing the bot](#implementing-the-bot) 
+- [Editing the bot](#editing-the-bot)
+- [Implementing the bot](#implementing-the-bot)
 - [Help](#help)
 
 ### Setup
@@ -30,17 +30,17 @@ After that login  with ``username`` (__developer__) & ``password`` (__adminadmin
 
 ![](./images/RPA_Login.png)   
 
-It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right. 
+It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right.
 
 
 ### RPA implementation artifacts
-We have already created a skeleton implementation for you to get started. Move to __AWiB__ folder by clicking the folder from the Task navigation area on the left-hand side under My Tasks. The contents of the AWiB folder will be shown within the editor.
+We have already created a skeleton implementation for you to get started. Move to __IBM DBA with Virtual Agent__ folder by clicking the folder from the Task navigation area on the left-hand side under _My Tasks_. The contents of the folder will be shown within the editor.
 
-**!!** **If you double-click a file it will run it.**  **!!** So, DO NOT run these unless told in these instructions.
+**NOTE!!** **If you double-click a file it will run it.**  **!!** So, DO NOT run anything unless told in these instructions.
 
-``You can edit the file by clicking it once and select edit from the top or right-click and select edit.`` Or right-click the file and select "Edit" from the pop-up menu.
+``You can edit the file by clicking it once and select edit from the top or right-click and select edit. Or right-click the file and select "Edit" from the pop-up menu.``
 
-![](./images/rpa_artifacts.png)
+![](./images/rpa_artifacts_new.png)
 
 Files in this directory:  
 **Get info from YTJ**   
@@ -49,7 +49,7 @@ This is our main RPA task bot that will be run, when our workflow will be starte
 **Loop over IBM Business Automation Workflow tasks**  
 This is what we call a "system bot". When this is started, it automatically connects to workflow environment (BAW) to check if there are some RPA tasks waiting to be done and if so, it will run ``Get info from YTJ`` task bot. The system bot is provided by the RPA platform, so you do not to build it yourself. Once it's started, it is configured to poll our workflow environment from time to time and when it finds something to do, it will run the main task bot (Get info from YTJ in our scenario).
 
-**YTJ implementation** . 
+**YTJ implementation** .
 This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly into Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
 ### Editing the bot
@@ -68,7 +68,7 @@ Here we have defined a few variables you will need:
 - ``name``, that we will use to save the business name info we get from ytj.fi,
 - ``postcode``, that we will use to save the postcode info we get from ytj.fi and
 - ``city``, that we will use to save the ciry info we get from ytj.fi.
-   
+
 ### Implementing the bot
 __1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below __the first comment line__. Drop the command __on the__ 1st comment line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
 
@@ -190,7 +190,7 @@ I can't select ytj.fi to my ``Object clone``
 > Please check you have the webpage open on the background. As it will list only pages you have open.  
 
 How to add variables to fields?  
-> Select the field you want the variable and press Fn+F2. 
+> Select the field you want the variable and press Fn+F2.
 
 Robot isn't doing nothing  
 > Make sure you don't have multiple webpages open, it will only work on one page.  
