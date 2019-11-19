@@ -1,10 +1,10 @@
 # **Lab 4: Robotic Process Automation**
-If the other sections where mainly reading and viewing already done elements, now you will get to create your own working bot with _Robotic Process Automation_ platform (IBM RPA with Automation Anywhere).  
+If the other labs of this exercise were mainly reading through and viewing already done elements, now you will get to create your own working RPA bot with _Robotic Process Automation_ platform (IBM RPA with Automation Anywhere).  
 
 What this ``bot`` should do:
 1. Wait for a task assigment (Get info from YTJ) from the workflow (Handle data change) that is triggered from our _Cloud Functions_ within our Watson Assistant chatbot.
 2. Receive the business_id (y-tunnus) from the workflow.
-3. Navigate to _ytj.fi_ web site and creates a search with the given business_id.
+3. Navigate to _ytj.fi/en_ web site and create a search with the given business_id.
 4. Gather the address information from the search result.
 5. Send the gathered information back to our workflow that automatically forwards it to the next task in the workflow (User validation).
 
