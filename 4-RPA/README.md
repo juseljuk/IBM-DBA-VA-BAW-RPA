@@ -95,7 +95,7 @@ __2.__ Next we add a ``Object cloning`` and select the search box from the ytj.f
 - Back in RPA editor window, drag and drop ``Object Cloning`` command under the second comment line.
 - When the configuration window opens, select __"YTJ - Main page - Internet Explorer"__ for the Select Window -configuration.
 - Next click __Capture__ button __and keep your mouse button pressed down!__
-- While keeping your mouse button down, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Hae yrityksen nimellä tai Y-tunnuksella) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
+- While keeping your mouse button down, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Search by name or Business ID) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
 - When the configuration window opens, select __Set Text__ to "Select action to perform".
 - Click "Text to set" input field to move your cursor/focus to it.
 - Press __Function + F2__ [Fn+F2] to bring up "Insert variable" window, select __business_id__ and click "Insert".
@@ -105,7 +105,7 @@ __2.__ Next we add a ``Object cloning`` and select the search box from the ytj.f
 
 Your action list in the editor should now be similar to this:
 
-![](./images/actionlist1.png)
+![](./images/actionlist1_new.png)
 
 __3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :) ``Before you start, make sure that you have the third (3.) comment row selected in your editor's action list.``
 
