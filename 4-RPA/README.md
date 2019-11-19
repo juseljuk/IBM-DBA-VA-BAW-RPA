@@ -109,13 +109,13 @@ Your action list in the editor should now be similar to this:
 
 __3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :) ``Before you start, make sure that you have the third (3.) comment row selected in your editor's action list.``
 
-- Click the "Record" button / icon on your editor (between "New" and "Run" on the top section of the editor window).
-- Select __YTJ - Etusivu - Internet Explorer__ as the window you wnat to use for recording and click "Start".
+- Click the __"Record"__ button / icon on your editor (between "New" and "Run" on the top section of the editor window).
+- Select __YTJ - Main page - Internet Explorer__ as the window you wnat to use for recording and click "Start".
 - You should now see the YTJ web site within your browser and additional small "Recording" window on the top of it with controls to Pause and Stop the recording.
 <img src="./images/recorder.png" width="30%">
 
 - Move your mouse cursor over the "Search" button / icon and click it as you normally would.
-<img src="./images/searchclick.png" width="50%">
+<img src="./images/searchclick_new.png" width="50%">
 
 - You should see the web page changing. Click __Stop__ on the small Recording window. This will stop the recording and bring the RPA editor window forward again.
 - Notice that a new Object Cloning command has been added under the third comment row.
