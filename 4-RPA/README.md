@@ -130,17 +130,19 @@ Once the bot finishes, you should see a similar page in your IE browser window:
 
 ![](./images/after_secondrun_new.png)
 
-How did the bot know to use a valid business id (Y-tunnus) to search for Posti? This is because the variables that we had already prepared for you had a value of __15318864-4__ defined as default value for business_id variable (that is used when its not otherwise set). Leave the browser window open move back to your RPA editor window.
+How did the bot know to use a valid business id to search for IBM Finland? This is because the variables that we had already prepared for you had a value of __0195876-3__ defined as default value for business_id variable (that is used when its not otherwise set).
 
-__4.__ The robot needs to click the first search result (in the "Hakutulokset table") in order to see more detaled information about company we were searching for. Go ahead and add this action under the 4th comment row in your action list. I would do this by using the __Smart Recorder__ (as we did in the previous step), but you can choose to use __Object Cloning__ command manually as we did in the 2nd step. Your choice :) Ask your instructor to help out if needed.
+*Leave the browser window open move back to your RPA editor window.*
+
+__4.__ The robot needs to click the first search result (the link "0195876-3" in the Search results HTML-table) in order to see more detailed information about company we were searching for. Go ahead and add this action under the 4th comment row in your action list. I would do this by using the __Smart Recorder__ (as we did in the previous step), but you can choose to use __Object Cloning__ command manually as we did in the 2nd step. Your choice :) Ask your instructor to help out if needed.
 
 After you're done the page in your IE browser should look like this:
 
-![](./images/final_search.png)
+![](./images/final_search_new.png)
 
 ...and your action list in your RPA editor like this:
 
-![](./images/actionlist2.png)
+![](./images/actionlist2_new.png)
 
 __NOTE!__ The Object Cloning command records many different attributes for the object that it recognizes. Some times we need to check which of the object attributes it has recorded and, in order to make our bot dynamic (work with any values within the object attributes), we need to remove some of the values that the command uses to recognize the object.
 
