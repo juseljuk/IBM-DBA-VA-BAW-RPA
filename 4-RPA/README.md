@@ -86,7 +86,7 @@ You can now test and run your bot for the first time! It has only one command - 
 
 First, click __Save__ on the editor window and then __Run__ to test your bot. __NOTE!__ When you click "Run", the RPA platform will take over your controls (mouse and keyboard). ``Make sure not to touch anything when the bot is running or you might interfere its operation.``
 
-![](./images/save_run1.png)
+<img src="./images/save_run1.png" width="50%">
 
 Your bot should run and YTJ web page should be opened in Internet Explorer (IE). Bot stops automatically. If you see a pop-up in IE about some security preferences, click "Ask me later" to close the pop-up. Nice! Your first RPA run :) __Make sure to leave the YTJ web site open!!__
 
