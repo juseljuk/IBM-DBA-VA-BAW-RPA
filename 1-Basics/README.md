@@ -118,7 +118,7 @@ The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Ac
 
 **(1)** Select the `Preview Link` that has already been created from `Integrations`:
 
-![](./images/preview_link.png)
+![](./images/preview_link_new.png)
 
 **(2)** You can change the **Name** and **Description** of the _Preview Link_ if you like. For now though, just click the URL under **Try it out and share the link**.
 
