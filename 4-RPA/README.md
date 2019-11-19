@@ -168,9 +168,9 @@ That's why we have already implemented a "data extraction bot" that you can use 
 
 - Finally click __Save__ on the Run Task configuration windows to save the Run Task command to our bots action list.
 
-__Now__ we can yet again test our bot! Save the latest action list by clicking the __Save__ button / icon on the top of the editor window. __Also__ close your IE browser before running your bot! Let's run it!
+__Now__ we can yet again test our bot! Save the latest action list by clicking the __Save__ button / icon on the top of the editor window. __Also__ close your IE browser before running your bot! **Let's run it!**
 
-When you run your bot, you should see it 1) opening the YTJ web page, 2) making the search using our business_id variable (deaults to 1531864-4), 3) clicking the first search result to show more detailed information of the company and finally 4) extracting the address information using the helper bot. The helper bot is configured to pop-up a message box displaying the extracted address information. The message box will close automatically in 5 seconds and after it, also the bot finishes.
+When you run your bot, you should see it 1) opening the YTJ web page, 2) making the search using our business_id variable (defaults to 0195876-3), 3) clicking the first search result to show more detailed information of the company and finally 4) extracting the address information using the helper bot. The helper bot is configured to pop-up a message box displaying the extracted address information. The message box will close automatically in 5 seconds and after it, also the bot finishes.
 
 __6.__ To finalize our bot, we only need to close the IE browser window (it's always good to clean up all the used windows)
 
@@ -178,7 +178,7 @@ __6.__ To finalize our bot, we only need to close the IE browser window (it's al
 
 Your action list for your bot should now look like this:
 
-![](./images/actionlist_final.png)
+![](./images/actionlist_final_new.png)
 
 __7.__ Congrats! All done!
 
