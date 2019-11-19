@@ -1,5 +1,5 @@
 # **Lab 1: Cognitive Chatbot Basics**
-In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help banks corporate users to change their address information. 
+In this lab we'll start to build a chatbot / virtual assistant using _**Watson Assistant service from IBM Cloud**_. This basic chatbot is a banking bot that will help banks corporate customers to change their address information.
 
 ## Requirements
 - [IBM Cloud account](https://cloud.ibm.com/)
@@ -12,7 +12,7 @@ In this lab we'll start to build a chatbot / virtual assistant using _**Watson A
 - Enable a web based chat interface for your chatbot (Optional)
 
 ## Introduction to Watson Assistant
-IBM **_Watson Assistant_** allows you to create cognitive chatbots that you can customise for your business, and deploy them across multiple channels to bring help to your customers where and when they need it.
+IBM **_Watson Assistant_** allows you to create cognitive chatbots that you can customize for your business, and deploy them across multiple channels to bring help to your customers where and when they need it.
 
 Most chatbots try to mimic human interactions, which can frustrate users when a misunderstanding arises. Watson Assistant is more. It knows when to search for an answer from a knowledge base, when to ask for clarity, and when to direct you to a human.
 
@@ -29,7 +29,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 **(2)** Create the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`.
 
-Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
+For location keep / select **London**. Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 
 ![](./images/02-assistant-service-create.jpg)
 
@@ -41,7 +41,7 @@ Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 **(1)** The first thing we need to do in **_Watson Assistant_** is create a _**Skill**_. A _**skill**_ contains the training data and machine learning logic that enables your chatbot to understand and help users and customers.
 
 
-Due to time contrains in this session we will import an existing skill. This is basic IT support chatbot conversation, where we will add in the next part the integration to Business Automation Workflow.  
+Due to time contrains in this session we will import an existing skill. This is basic B2B bank support chatbot conversation, where we will add in the integration to Business Automation Workflow.  
 
 Download the skill from this link: https://ibm.box.com/v/B2B-Bank-Bot
 
@@ -59,9 +59,9 @@ You will be directed to the chatbot content.
 
 An _**intent**_ represents the purpose of a user's input. By recognising the intent expressed by a user, Watson Assistant can choose the correct dialog flow to use to respond to it. To plan the intents for your application, you need to consider what your chatbot users might want to do, and what you want your application to be able to handle.
 
-For this assistant we have currently implemented just one intent: #haluaa_ilmoittaa_osoitteenmuutoksesta (for understanding that the customer wants to notify us of address change).
+For this assistant we have currently implemented just a couple of intents. The one that we have also implemented a real dialog for is _#wants_to_inform_about_address_change_ (for understanding that the customer wants to notify us of address change).
 
-![](./images/bank_bot_overview.png)
+![](./images/bank_bot_overview_new.png)
 
 An _**entity**_ represents a term or object in the user's input that provides **context** for a particular _intent_. If _intents_ represent _verbs_ (something a user wants to do), _entities_ represent _nouns_ (such as the object of, or the context for, an action).
 
@@ -128,8 +128,7 @@ The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Ac
 
 ![](./images/assistant_link.png)
 
-That's it! You have a shareable web-based chatbot you can use to externally test your _skill_. 
+That's it! You have a shareable web-based chatbot you can use to externally test your _skill_.
 
 ## Summary
-Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input. 
-
+Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input.
