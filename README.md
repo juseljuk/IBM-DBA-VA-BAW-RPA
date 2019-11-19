@@ -1,5 +1,6 @@
 
 # IBM Digital Business Automation Workshop Exercise - How to combine different automation capabilities
+## Virtual Agent with IBM DBA (Business Automation Workflow and Robotic Process Automation)
 ### Use case
 Banks corporate customers address details have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in oder to notify bank of the address change.
 
@@ -35,12 +36,12 @@ In this part we create our **Virtual Assistant / Chatbot** by importing a B2B Ba
 ## Connecting Chatbot to IBM Business Automation Workflow
 Here we connect our chatbot to our managed workflow, so that our chatbot can trigger a new managed workflow instance when done collecting information from the banks corporate user. We will use IBM Cloud Function (serverless computing services) _actions_ to achieve this.
   - [LAB 2: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)](./2-Functions)    
- 
+
 ## Automation
 Login to your ``Virtual Machine``, using the instructions handed out to you by your instructors.
 - [LAB 3: Business Automation Workflow](./3-BAW)
 - [LAB 4: Robotic Process Automation](./4-RPA)
-  
+
 ## Putting it all together!
 - [LAB 5: Our system in action](./5-Final)
 
