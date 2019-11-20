@@ -156,6 +156,7 @@ var payload = {
           street_address: params.osoite,
           postcode: params.postinumero,
           city: params.paikka,
+          email: params.s_posti
         }
       },
     ]
