@@ -14,7 +14,7 @@ Now it's time to pull all the things together and test our solution end-to-end. 
 
 ![](./images/invoke_get_token_result.png)
 
-If you do not see a message about successful activation, something is wrong and you need to troubleshoot. Otherwise you can move forward to next step (3).
+If you do not see a message about successful activation, something is wrong and you need to troubleshoot. Otherwise you can move forward to next step.
 
 > Troubleshooting
 
@@ -25,4 +25,16 @@ Check these first:
 
 When you have made the checks and found nothing to correct or after corrections you are still not able to run a successful invocation, please ask help from your instructor.
 
-**3.** xxx
+## Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running
+
+In oder to verify that your Watson Assistant can indeed start a new _**Handle data change**_ workflow instance, you need to open your BAW web designer and its **INSPECTOR** view.
+
+**1.** Open _Handle data change_ process as you did in lab 3, if not already open.
+
+- Open Chrome browser within your virtual desktop and navigate to **Workflow Center - Solutions**.
+- Open **Process Apps** and then **AWiB-workflow**.
+- Finally open **Handle data change** from the left-hand side navigation bar under _Processes_.
+
+**2.** Switch to _**INSPECTOR**_ view by clicking the "INSPECTOR" text on the top bar.
+
+![](./images/open_inspector.png)
