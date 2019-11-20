@@ -53,6 +53,9 @@ In oder to verify that your Watson Assistant can indeed start a new _**Handle da
 
 2. Click "the Terminate" (if the instance is active) or/and "the Delete" control (if/when the instance is terminated or completed) to clear out the instance from the list. Accept the termination / deletion when asked.
 3. Repeat for all the instances in the search result list.
+4. Finally click "the Refesh" button to verify that all the instances are deleted and your search result list is clear.
+
+![](./images/delete_instance2.png)
 
 ## Use your Watson Assistant to trigger the workflow
 
