@@ -246,7 +246,7 @@ Now regardless of integration type our chatbot will always start correctly, and 
 
 ![](./images/set_assistant_get_workflow_token_new2.PNG)
 
-Click the `gear symbol` to open the response editor.
+Click the `gear symbol` from the first "Assistant Responses" row to open the response editor.
 
 The **only** thing you will need to replace here is `<your-get-workflow-token-endpoint>` with the endpoint information you copied for your Get Workflow Token action. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
