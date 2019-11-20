@@ -244,7 +244,7 @@ Now regardless of integration type our chatbot will always start correctly, and 
 
 **(3)** Find the node called _**Get Workflow Token**_ and click to open its configuration.
 
-![](./images/set_assistant_get_workflow_token_new2.png)
+![](./images/set_assistant_get_workflow_token_new2.PNG)
 
 Click the `gear symbol` to open the response editor.
 
