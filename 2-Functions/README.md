@@ -237,14 +237,16 @@ Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in 
 Your value for the $private variable should look something like:
 **{"myCredentials":{"api_key":"16fcbbb5-8124-435f-8326-38a213704870:i3ejktRgIPu2svXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}**
 
+**NOTE!!** Make sure to remove also the "<" and ">" signs from the template. So that you API key is just surrounded by quotation marks.
+
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
 
 **(3)** Find the node called _**Get Workflow Token**_ and click to open its configuration.
 
-![](./images/set_assistant_get_workflow_token_new.png)
+![](./images/set_assistant_get_workflow_token_new2.PNG)
 
-Click the `gear symbol` to open the response editor.
+Click the `gear symbol` from the first "Assistant responds" row to open the response editor.
 
 The **only** thing you will need to replace here is `<your-get-workflow-token-endpoint>` with the endpoint information you copied for your Get Workflow Token action. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
@@ -271,7 +273,7 @@ Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-cha
 
 `name.lastname_dev/default/Start%20Address%20Change%20Workflow.json`
 
-![](./images/assistant_conf_2_done.png)
+![](./images/assistant_conf_2_done_new.png)
 
 **NOTE!**
 Just use the part **AFTER** the **.../web/*** !!!
