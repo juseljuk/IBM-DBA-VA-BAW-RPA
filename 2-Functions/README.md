@@ -5,7 +5,7 @@ In practical terms, we will be setting up some service calls using IBM Cloud Fun
 
 ## Requirements
 - [IBM Cloud account](https://cloud.ibm.com/)
-- [Previous lab](./1-Basics)
+- [Previous lab](../1-Basics)
 
 ## Agenda
 - Setup _**IBM Cloud Function**_
