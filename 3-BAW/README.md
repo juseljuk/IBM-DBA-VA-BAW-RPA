@@ -58,4 +58,4 @@ We have defined that it the flow will continue depending on what button (Approve
 ### Summary
 Well done! You've now explored a few of the basic elements of IBM Business Automation Workflow. Feel free to explore the diffrent nodes/activities and options on this workflow. Just do not change anything that has already been configured for your convenience :)
 
-[CONTINUE TO THE NEXT LAB](./4-RPA)
+[CONTINUE TO THE NEXT LAB](../4-RPA)
