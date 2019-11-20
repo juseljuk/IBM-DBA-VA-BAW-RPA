@@ -87,7 +87,7 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 
 ``If you do not see a new instance appearing in 15 seconds and after hitting the **Refresh** button again (when you trigger the workflow for the fist time it might take some time before the instance appears), then your configuration has some errors and you need to troubleshoot.``
 
-If you DO see the instance, you can remove it from the list by first _terminating_ it from the instance information panel controls and then _deleting_ it (look at the instructions above under "Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running: Step 3"). When done, you can move on to the final test!
+If you DO see the instance, you can remove it from the list by first _terminating_ it from the instance information panel controls and then _deleting_ it (look at the instructions above under "_Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running: How to remove the instances_"). When done, you can move on to the final test!
 
 > Troubleshooting
 
