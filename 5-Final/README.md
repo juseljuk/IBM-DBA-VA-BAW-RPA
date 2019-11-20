@@ -42,3 +42,9 @@ In oder to verify that your Watson Assistant can indeed start a new _**Handle da
 **3.** Next open the instance search view by clicking the "magnifying glass" icon on the top bar.
 
 ![](./images/mf.png)
+
+**You should NOT have any instances in your environment as the case is with the picture shown above**. If you have accidentally started the workflow during the earlier labs, you might have have similar situation as shown in the picture. If so, follow the below instructions to remove the instances, otherwise you can move to the next section of this lab. **Leave the INSPECTOR / Search View open**.
+
+## Use your Watson Assistant to trigger the workflow
+
+xxx
