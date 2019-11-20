@@ -2,4 +2,8 @@
 
 Not quite! Now it's time to test all the components together! Btw, **CONGRATS** making this far!
 
-Ask your instructor to help with this. There are just a couple steps to make all of the components you have developed work together, but it is better that you do this with your instructor so that he can check that everything is in place before trying to run the test! Good luck!
+Now it's time to pull all the things together and test our solution end-to-end. Before running the solution, we need to test that the connection from your IBM Cloud Functions to BAW virtual environment is working and you your Virtual Assistant configurations are correct.
+
+## Test your IBM Cloud Functions connection to BAW
+
+
