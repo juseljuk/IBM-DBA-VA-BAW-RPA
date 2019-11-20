@@ -45,6 +45,15 @@ In oder to verify that your Watson Assistant can indeed start a new _**Handle da
 
 **You should NOT have any instances in your environment as the case is with the picture shown above**. If you have accidentally started the workflow during the earlier labs, you might have have similar situation as shown in the picture. If so, follow the below instructions to remove the instances, otherwise you can move to the next section of this lab. **Leave the INSPECTOR / Search View open**.
 
+> How to remove the instances
+
+1. Click the instance to select it and you see the instance information appearing to right-hand side.
+
+![](./images/delete_instance1.png)
+
+2. Click "the Terminate" (if the instance is active) or/and "the Delete" control (if/when the instance is terminated or completed) to clear out the instance from the list. Accept the termination / deletion when asked.
+3. Repeat for all the instances in the search result list.
+
 ## Use your Watson Assistant to trigger the workflow
 
 xxx
