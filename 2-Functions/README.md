@@ -266,7 +266,7 @@ After copying your end point to the configuration it should look similar to this
 
 ![](./images/email_given_new.png)
 
-Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look like:
+Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look something like:
 
 `name.lastname_dev/default/Start%20Address%20Change%20Workflow.json`
 
@@ -276,7 +276,9 @@ Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-cha
 Just use the part **AFTER** the **.../web/*** !!!
 
 **NOTE2!**
-If your endpoint URL is missing ".json" from the end, **you need to add it!!**
+If your endpoint URL is missing ".json" from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template.
+
+Finally click "the 3 dots menu" again and select "Close JSON Editor" to save your changes.
 
 Fantastic! Continue with lab 3 to get started with the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow and your RPA bot it from your Watson Assistant chatbot!
 
