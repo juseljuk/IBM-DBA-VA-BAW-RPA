@@ -14,14 +14,15 @@ Now it's time to pull all the things together and test our solution end-to-end. 
 
 ![](./images/invoke_get_token_result.png)
 
-If you do not see a message about successful activation, something is wrong and you need to troubleshoot. Otherwise you can move forward to neext step (3).
+If you do not see a message about successful activation, something is wrong and you need to troubleshoot. Otherwise you can move forward to next step (3).
 
 > Troubleshooting
+
 Check these first:
 
 - Your virtual BAW environment is running (you can access the environment as you did in lab 3 and 4).
 - The **port number** you are using in your IBM Cloud Functions _action_ is correct (matches with the one you got from your instructor).
 
-When you have made the checks and found nothing to correct, please ask help from your instructor.
+When you have made the checks and found nothing to correct or after corrections you are still not able to run a successful invocation, please ask help from your instructor.
 
 **3.** xxx
