@@ -53,10 +53,32 @@ In oder to verify that your Watson Assistant can indeed start a new _**Handle da
 
 2. Click "the Terminate" (if the instance is active) or/and "the Delete" control (if/when the instance is terminated or completed) to clear out the instance from the list. Accept the termination / deletion when asked.
 3. Repeat for all the instances in the search result list.
-4. Finally click "the Refesh" button to verify that all the instances are deleted and your search result list is clear.
+4. Finally click "the Refesh" button to verify that all the instances are deleted and your search result list is clear. **Leave the INSPECTOR / Search View open**.
 
 ![](./images/delete_instance2.png)
 
+
 ## Use your Watson Assistant to trigger the workflow
 
-xxx
+We can run through our Watson Assistant **dialog** and test, if we can trigger a new workflow instance.
+
+**1.** Open your Watson Assistant service and your B2B Bank Bot _**skill**_ - that we imported in Lab 1 and extended in Lab 2 - from IBM Cloud (if not already open).
+
+**2.** Click "**Try it**" button on the top right-hand side to test your skill and its dialog.
+
+**3.** When "the Try it out" section opens to the right of your browser window, run through the dialog with the following selections / input:
+
+- Select **Address change**
+- Type in something (does not really matter what) for the _company name_.
+- Type in something (does not really matter what) for the _business id_.
+- Type in something (does not really matter what) for the _street address_.
+- Type in something (does not really matter what) for the _postcode_.
+- Type in something (does not really matter what) for the _city_.
+- Click **Yes** when the dialog shows the collected address information.
+- Click **No thanks** when the dialog asks if you want an email confirmation.
+
+**4.** xxx
+
+xxxx
+
+![](./images/new_instance.png)
