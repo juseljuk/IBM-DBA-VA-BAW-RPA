@@ -1,5 +1,5 @@
 # **Lab 3: IBM Business Automation Workflow**
-Here we will explore Business Automation Workflow (BAW) and view a few of its core functions. As BAW offers a wide variety of functions, we will focus only on the main elements used on this workshop. Every component used in this workshop is already done however it is important to understand on a high level what is happening. 
+Here we will explore **IBM Business Automation Workflow (BAW)** and view a few of its core capabilities. As BAW offers a wide variety of functions, we will focus only on the main elements used on this workshop. Every component used in this workshop is already implemented for you, however it is important to understand the basic functionality and the components within the workflow we're using.
 
 ### Content
 - [Access to BAW](#access-baw)
@@ -29,7 +29,7 @@ This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are 
 
 In this particular workflow:  
 - **RPA** Is responsible of the robot actions. It takes values from the ``start`` node (values we sended from Watson assistant) and performs our ``Robot task`` that you will create in next lab.
-- **Handler** lane has an ``Validate data`` node. 
+- **Handler** lane has an ``Validate data`` node.
 We have defined it to be a so called human task where we have created a simple UI. This UI will show the information we got from the ``start`` node and the information from the ``Robot task`` node, so that our handler who performs this task can compare the information. The user has to review the information and decide if the information is valid.
 - **System** lane has a few nodes in this setup. These nodes are completely demostrative for this workshop, but we have given a few examles you could do after the user has validated the data. If the data is valid, we could save the updated data to an CRM alternatively we could inform the customer that we couldn't update the information.
 
@@ -39,7 +39,7 @@ By clicking a node - also called as an ``activity`` or a ``step`` of a workflow)
 ![](./images/Robot_Info.png)   
 
 Settings we would normally need to set on the ``Robot task`` **NOTE!**: everything in the workflow and within its activities is already configured, so don't change anything.
-- **General** Give name and if you want, also color for the activity. 
+- **General** Give name and if you want, also color for the activity.
 - **Implementation** Here you choose the type of the activity, and if it is an ``Robot task``you would need to press **Generate bot...** to create a bot definition file that you can later on use to implement the actual RPA bot. You do not need to do it now.
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
