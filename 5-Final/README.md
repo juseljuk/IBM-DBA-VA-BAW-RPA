@@ -8,4 +8,5 @@ Now it's time to pull all the things together and test our solution end-to-end. 
 
 **1.** Open your IBM Cloud Functions view from your IBM Cloud account. Navigate to **_actions_** and in the code view, click the **Invoke** button from the right upper corner.
 
+![](./images/invoke_get_token.png)
 
