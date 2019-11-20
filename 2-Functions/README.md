@@ -291,11 +291,11 @@ The chatbot will gather the information needed (Company name, company business i
 
 This is what the conversation will look like:
 
-<img src="./images/chat1_new.png" width="75%">
+<img src="./images/chat1_new.png" width="50%">
 
-<img src="./images/chat2_new.png" width="75%">
+<img src="./images/chat2_new.png" width="50%">
 
-<img src="./images/chat3_new.png" width="75%">
+<img src="./images/chat3_new.png" width="50%">
 
 
 The error at the end is due to the fact that you do not have your workflow environment yet running that your chatbot tries to call. Don't worry, we'll fix this in the next labs!
