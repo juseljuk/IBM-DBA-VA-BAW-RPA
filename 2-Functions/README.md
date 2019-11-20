@@ -280,24 +280,22 @@ If your endpoint URL is missing ".json" from the end, **you need to add it!!** A
 
 Finally click "the 3 dots menu" again and select "Close JSON Editor" to save your changes.
 
-Fantastic! Continue with lab 3 to get started with the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow and your RPA bot it from your Watson Assistant chatbot!
+Fantastic! Continue with lab 3 to get started with the IBM Business Automation Workflow (BAW) and the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow from your Watson Assistant chatbot!
 
 
 ## Summary
-You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling additional services using _**IBM Cloud Functions**_.
-
+You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling external services using _**IBM Cloud Functions**_.
 
 Once you have completed the next two labs you will be able to connect with the BAW using your chatbot.
-The chatbot will gather the information needed (Company name, company number, address, city, postnumber) and send them to the BAW to be checked.
+The chatbot will gather the information needed (Company name, company business id, street address, city, postcode) and send them to the BAW to be checked and handled.
 
 This is what the conversation will look like:
 
-![](./images/chat1.png)
+<img src="./images/chat1_new.png" width="75%">
 
-![](./images/chat2.png)
+<img src="./images/chat2_new.png" width="75%">
 
-![](./images/chat3.png)
+<img src="./images/chat3_new.png" width="75%">
 
-![](./images/chat4.png)
 
-The error at the end is due to the fact that you do not have the workflow yet running that your chatbot tries to call. Don't worry, we'll fix this in the next lab!
+The error at the end is due to the fact that you do not have your workflow environment yet running that your chatbot tries to call. Don't worry, we'll fix this in the next labs!
