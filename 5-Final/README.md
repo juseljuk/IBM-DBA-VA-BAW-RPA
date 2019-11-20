@@ -69,15 +69,17 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 **3.** When "the Try it out" section opens to the right of your browser window, run through the dialog with the following selections / input:
 
 - Select **Address change**
-- Type in something (does not really matter what) for the _company name_.
-- Type in something (does not really matter what) for the _business id_.
-- Type in something (does not really matter what) for the _street address_.
-- Type in something (does not really matter what) for the _postcode_.
-- Type in something (does not really matter what) for the _city_.
-- Click **Yes** when the dialog shows the collected address information.
+- Type in something (does not really matter what) for the _**company name**_.
+- Type in something (does not really matter what) for the _**business id**_.
+- Type in something (does not really matter what) for the _**street address**_.
+- Type in something (does not really matter what) for the _**postcode**_.
+- Type in something (does not really matter what) for the _**city**_.
+- Click **Yes** when the dialog shows the collected information and asks if it's correct.
 - Click **No thanks** when the dialog asks if you want an email confirmation.
 
-**4.** xxx
+**4.** Move back to your **INSPECTOR view** in your virtual environment and hit the **Refresh** button.
+
+``If you have configured everything correctly, you should now see a new active instance in your search results list!``
 
 xxxx
 
