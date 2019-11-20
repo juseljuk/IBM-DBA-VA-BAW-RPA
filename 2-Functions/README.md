@@ -151,12 +151,12 @@ var payload = {
       {
         name: 'data',
         data: {
-          name: params.nimi,
-          business_id: params.Ytunnus,
-          street_address: params.osoite,
-          postcode: params.postinumero,
-          city: params.paikka,
-          email: params.s_posti
+          name: params.name,
+          business_id: params.business_id,
+          street_address: params.street_address,
+          postcode: params.postcode,
+          city: params.city,
+          email: params.email
         }
       },
     ]
