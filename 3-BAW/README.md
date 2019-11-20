@@ -1,5 +1,7 @@
 # **Lab 3: IBM Business Automation Workflow**
-Here we will explore **IBM Business Automation Workflow (BAW)** and view a few of its core capabilities. As BAW offers a wide variety of functions, we will focus only on the main elements used on this workshop. Every component used in this workshop is already implemented for you, however it is important to understand the basic functionality and the components within the workflow we're using.
+Here we will explore **IBM Business Automation Workflow (BAW)** and view a few of its core capabilities. BAW offers a wide variety of different capabilities and functions, but we will focus only on the main elements used to implement the workflow that we use in this exercise.
+
+Every component used in this exercise is already implemented for you, however it is important to understand the basic functionality and the components within the workflow we're using.
 
 ### Content
 - [Access to BAW](#access-baw)
