@@ -237,6 +237,8 @@ Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in 
 Your value for the $private variable should look something like:
 **{"myCredentials":{"api_key":"16fcbbb5-8124-435f-8326-38a213704870:i3ejktRgIPu2svXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}**
 
+**NOTE!!** Make sure to remove also the "<" and ">" signs from the template. So that you API key should just be surrounded by quotation marks.
+
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
 
