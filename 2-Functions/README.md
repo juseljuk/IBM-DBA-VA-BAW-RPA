@@ -302,3 +302,5 @@ This is what the conversation will look like:
 
 
 The error at the end is due to the fact that you do not have your workflow environment yet running that your chatbot tries to call. Don't worry, we'll fix this in the next labs!
+
+[CONTINUE TO THE NEXT LAB](../3-BAW)
