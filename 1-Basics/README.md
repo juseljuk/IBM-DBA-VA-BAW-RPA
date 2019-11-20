@@ -133,4 +133,4 @@ That's it! You have a shareable web-based chatbot you can use to externally test
 ## Summary
 Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input.
 
-[CONTINUE TO THE NEXT LAB](../4-Functions)
+[CONTINUE TO THE NEXT LAB](../2-Functions)
