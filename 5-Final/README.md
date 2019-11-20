@@ -38,3 +38,7 @@ In oder to verify that your Watson Assistant can indeed start a new _**Handle da
 **2.** Switch to _**INSPECTOR**_ view by clicking the "INSPECTOR" text on the top bar.
 
 ![](./images/open_inspector.png)
+
+**3.** Next open the instance search view by clicking the "magnifying glass" icon on the top bar.
+
+![](./images/mf.png)
