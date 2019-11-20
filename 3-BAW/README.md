@@ -25,7 +25,7 @@ When the Process Application opens in web process designer, click ``Processes`` 
 ### Quick guide on workflows
 This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like).
 
-![](./images/BAW_Design.png)  
+![](./images/BAW_Design_new.png)  
 
 In this particular workflow:  
 - **RPA** Is responsible of the robot actions. It takes values from the ``start`` node (values we sended from Watson assistant) and performs our ``Robot task`` that you will create in next lab.
