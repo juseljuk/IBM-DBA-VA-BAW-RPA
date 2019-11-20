@@ -28,7 +28,7 @@ When you have made the checks and found nothing to correct or after corrections 
 
 ## Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running
 
-In oder to verify that your Watson Assistant can indeed start a new _**Handle data change**_ workflow instance, you need to open your BAW web designer and its **INSPECTOR** view.
+In order to verify that your Watson Assistant can indeed start a new _**Handle data change**_ workflow instance, you need to open your BAW web designer and its **INSPECTOR** view.
 
 **1.** Open _Handle data change_ process as you did in lab 3, if not already open.
 
