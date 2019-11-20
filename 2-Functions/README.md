@@ -273,7 +273,7 @@ Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-cha
 
 `name.lastname_dev/default/Start%20Address%20Change%20Workflow.json`
 
-![](./images/assistant_conf_2_done.png)
+![](./images/assistant_conf_2_done_new.png)
 
 **NOTE!**
 Just use the part **AFTER** the **.../web/*** !!!
