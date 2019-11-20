@@ -191,6 +191,8 @@ If you want, you can test your bot with some other business ids as well :) Try f
 
 Got to variable manager, double-click `business_id` variable and set the desired default value you want to test!
 
+[CONTINUE TO THE FINAL LAB](../5-Final)
+
 ### Help
 I can't select ytj.fi to my ``Object clone``   
 > Please check you have the webpage open on the background. As it will list only pages you have open.  
