@@ -212,7 +212,7 @@ Now let's go and use our functions in _**Watson Assistant**_.
 
 If you are still in Actions, click **Functions** to get to your main Functions page.
 
-![](./images/back_to_functions.png)
+<img src="./images/back_to_functions.png" width="50%">
 
 ## Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
 As you've already seen, you need to pass security credentials between services and applications in order to use them. In order to call _**IBM Cloud Functions**_ from within _**Watson Assistant**_ _dialogs_ we need to understand their credentials and encode them correctly.
@@ -228,6 +228,9 @@ Under the 'Then set context' there is a variable called `$private` with the valu
 {"myCredentials":{"api_key":"<your-ibm-cloud-functions-api-key>"}}
 
 ```
+
+Your value for the $private variable should look something like:
+**{"myCredentials":{"api_key":"16fcbbb5-8124-435f-8326-38a213704870:i3ejktRgIPu2svXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}**
 
 Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
 
