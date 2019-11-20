@@ -1,15 +1,15 @@
 # **Lab 2: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)**
-In this lab we're going to show how you can extend your Watson Assistant chatbot with a IBM Business Automation Workflow (BAW) environment and Robotic Process Automation using _**IBM Cloud Functions**_.
+In this lab we're going to show how you can extend your Watson Assistant chatbot so that it can call out external services using _**IBM Cloud Functions**_. Our assistant will be triggering a managed workflow running on _**IBM Business Automation Workflow (BAW)**_.
 
-In practical terms, we'll define _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the BAW and then RPA (Robotic Process Automation) and return a response based on the success of the address change. 
+In practical terms, we will be setting up some service calls using IBM Cloud Functions _**actions**_ (to trigger the workflow) and then use them from our Watson Assistant skill and its _dialog nodes_.
 
 ## Requirements
-- IBM Cloud account 
-- Previous lab
+- [IBM Cloud account](https://cloud.ibm.com/)
+- [Previous lab](./1-Basics)
 
 ## Agenda
 - Setup _**IBM Cloud Function**_
-- Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_ 
+- Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
 
 
 ## Setup _**IBM Cloud Function**_
@@ -30,7 +30,7 @@ Some examples of how we might use an _**IBM Cloud Function**_ from within _**Wat
 
 From there, first _**check the pulldown menu at the top right**_.
 
-Make sure the selected location is the same region where you created your Watson Assistant service. 
+Make sure the selected location is the same region where you created your Watson Assistant service.
 
 Next, click `Start Creating`, then `Create Action`.
 
@@ -52,15 +52,15 @@ You'll then be transported to a code editor. Delete all of the default lines of 
   * @param Cloud Functions actions accept a single parameter, which must be a JSON object.
   *
   * @return The output of this action, which must be a JSON object.
-  * 
-  * The port is unique to every environment 
+  *
+  * The port is unique to every environment
   *
   */
 
 const needle = require('needle');
 
 async function main(params) {
-    
+
 var headers = {
     'Content-Type': 'application/json',
     'Host': 'api.eu-gb.apiconnect.appdomain.cloud'
@@ -78,7 +78,7 @@ var options = {
 var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?port=XXXXX';
 
   try {
-    
+
     let response = await needle(URL,headers,options);
     var token = response.body.csrf_token;
     var call_result = {
@@ -97,10 +97,10 @@ var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-work
     console.log("error test");
   }
 }
-exports.main = main; 
+exports.main = main;
 ```
 
-This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token. 
+This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token.
 
 **(4)** You only need to make a small change to this code.
 
@@ -116,7 +116,7 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
-https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Get%20Workflow%20Token 
+https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Get%20Workflow%20Token
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
@@ -138,7 +138,7 @@ Then repeat the previous process. Create (click "Create" button) new action call
 const needle = require('needle');
 
 async function main(params) {
-    
+
 var headers = {
     'Content-Type': 'application/json',
     'BPMCSRFToken': params.token,
@@ -189,7 +189,7 @@ exports.main = main;
 
 ```
 
-This code will use the authentication token from the previous action and call the BAW with the data we enter in the Watson Assistant chatbot. 
+This code will use the authentication token from the previous action and call the BAW with the data we enter in the Watson Assistant chatbot.
 
 **(6)** You only need to make a small change to this code.
 
@@ -275,15 +275,15 @@ Just use the part **AFTER** the **.../web/*** !!!
 **NOTE2!**
 If your endpoint URL is missing ".json" from the end, **you need to add it!!**
 
-Fantastic! Continue with lab 3 to get started with the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow and your RPA bot it from your Watson Assistant chatbot! 
+Fantastic! Continue with lab 3 to get started with the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow and your RPA bot it from your Watson Assistant chatbot!
 
 
 ## Summary
-You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling additional services using _**IBM Cloud Functions**_. 
+You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling additional services using _**IBM Cloud Functions**_.
 
 
-Once you have completed the next two labs you will be able to connect with the BAW using your chatbot. 
-The chatbot will gather the information needed (Company name, company number, address, city, postnumber) and send them to the BAW to be checked. 
+Once you have completed the next two labs you will be able to connect with the BAW using your chatbot.
+The chatbot will gather the information needed (Company name, company number, address, city, postnumber) and send them to the BAW to be checked.
 
 This is what the conversation will look like:
 
