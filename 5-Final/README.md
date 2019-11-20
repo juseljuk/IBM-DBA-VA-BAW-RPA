@@ -14,7 +14,7 @@ Now it's time to pull all the things together and test our solution end-to-end. 
 
 ![](./images/invoke_get_token_result.png)
 
-If you do not see a message about successful activation, something is wrong and you need to troubleshoot. Otherwise you can move forward to next step.
+If you do not see a message about successful activation / you see an error massage, something is wrong and you need to troubleshoot. Otherwise you can move forward to next step.
 
 > Troubleshooting
 
@@ -22,6 +22,7 @@ Check these first:
 
 - Your virtual BAW environment is running (you can access the environment as you did in lab 3 and 4).
 - The **port number** you are using in your IBM Cloud Functions _action_ is correct (matches with the one you got from your instructor).
+- The **code** for your action is exactly as in the instructions (Lab 2).
 
 When you have made the checks and found nothing to correct or after corrections you are still not able to run a successful invocation, please ask help from your instructor.
 
@@ -91,7 +92,10 @@ If you DO see the instance, you can remove it from the list by first _terminatin
 
 > Troubleshooting
 
-- xxx
+- The most obvious reason for your end-to-end solution not working at this stage is that you have an error in your Watson Assistant / IBM Cloud Functions _actions_ configuration.
+- Check your **Start Address Change Workflow** IBM Cloud Functions _action_ and make sure that the **port number** you are using in your code matches with the one given by your instructor and the code itself is exactly as in the instructions (Lab 2, Setup IBM Cloud Functions: **Step 5**).
+- Check your Watson Assistant _dialog node_ **Email given** for any typos for the web action configuration (Lab 2, Setup Watson Assistant to use IBM Cloud Functions: **Step 4**).
+- If you can not find the cause for the error, ask help from your instructor!
 
 ## Final test with RPA included
 
