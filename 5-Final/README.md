@@ -81,6 +81,8 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 
 ``If you have configured everything correctly, you should now see a new active instance in your search results list!``
 
-**Click the instance** to select it and bring up the instance information panel to the right-hand side of the view. You can then expand the **Data** section and the **data(Customerdata)** object to see the data that your Watson Assistant collected via its dialog and sent to your BAW workflow. Nice!
+**Click** the instance to select it and bring up the instance information panel to the right-hand side of the view. You can then expand the **Data** section and the **data(Customerdata)** object to see the data that your Watson Assistant collected via its dialog and sent to your BAW workflow. Nice!
 
 ![](./images/new_instance.png)
+
+``If you do not see a new instance appearing in 15 seconds and after hitting the **Refresh** button again (when you trigger the workflow for the fist time it might take some time before the instance appears), then your configuration has some errors and you need to troubleshoot.``
