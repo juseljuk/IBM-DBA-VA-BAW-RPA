@@ -94,3 +94,5 @@ If you DO see the instance, you can remove it from the list by first _terminatin
 - xxx
 
 ## Final test with RPA included
+
+**Now you are really close to finishing the exercise!** What we will do next is to repeat the last step (triggering the workflow with Watson Assistant) with our RPA also running.
