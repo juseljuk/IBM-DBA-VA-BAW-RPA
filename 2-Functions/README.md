@@ -8,29 +8,29 @@ In practical terms, we will be setting up some service calls using IBM Cloud Fun
 - [Previous lab](../1-Basics)
 
 ## Agenda
-- Setup _**IBM Cloud Function**_
+- Setup _**IBM Cloud Functions**_
 - Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
 
 
-## Setup _**IBM Cloud Function**_
-**(1)** We need a mechanism by which we can call the  workflow (running on IBM Business Automation Workflow environment) service, so we can passing our user's input text to the API. We'll do this by creating an _**IBM Cloud Function**_.
+## Setup _**IBM Cloud Functions**_
+**(1)** We need a mechanism by which we can trigger our managed workflow (running on IBM Business Automation Workflow environment) service and pass the user's inputs information to the workflow API. We'll do this by using _**IBM Cloud Functions**_ running on IBM Cloud.
 
-With _**IBM Cloud Functions**_ you can write lightweight code that executes application logic in a scalable way. You can then run this code on-demand via requests from applications like our _**Watson Assistant**_ chatbot, or automatically in response to events.
+Based on Apache OpenWhisk, IBM Cloud Functions is a Functions as a Service (FaaS) platform that makes it easy to build and deploy serverless applications. IBM Cloud Functions allow you to write lightweight code that executes application logic in a scalable way. You can then run this code on-demand via requests from applications like our _**Watson Assistant**_ chatbot, or automatically in response to events.
 
-Some examples of how we might use an _**IBM Cloud Function**_ from within _**Watson Assistant**_ include:
+Some examples of how we might use IBM Cloud Functions from _**Watson Assistant**_ include:
 
 - Validating information that you collect from the user.
-- Doing calculations or string manipulations on user input that are too complex for supported _SpEL_ expression methods to handle.
+- Doing calculations or string manipulations on user input that are too complex for supported _SpEL_ expression language methods to handle.
 - Interacting with an external web service to get information. For example, you might check on the expected arrival time for a flight from an air traffic service.
 - Sending requests to an external application, such as a restaurant reservation site, to complete a simple transaction on the user's behalf.
 
-**(2)** Go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then `Functions`.
+**(2)** Within your IBM Cloud account, go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then `Functions`.
 
 ![](./images/08-find-functions.jpg)
 
 From there, first _**check the pulldown menu at the top right**_.
 
-Make sure the selected location is the same region where you created your Watson Assistant service.
+**!!Make sure the selected location is the same region where you created your Watson Assistant service!!** So, if you used _London_ for your Watson Assistant, you should select _London_ also for your IBM Cloud Functions.
 
 Next, click `Start Creating`, then `Create Action`.
 
@@ -40,7 +40,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 **(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
-![](./images/get_workflow_token.png)
+![](./images/get_workflow_token_new.png)
 
 You'll then be transported to a code editor. Delete all of the default lines of code within the editor, and replace them with these:
 
