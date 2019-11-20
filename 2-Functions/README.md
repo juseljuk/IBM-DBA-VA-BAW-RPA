@@ -104,7 +104,7 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 **(4)** You only need to make a small change to this code.
 
-- Replace `port=XXXX` with the value of your environment port. Note that your port number might be 4 or 5 numbers long.
+- Replace `port=XXXXX` with the value of your environment port, given by your instructor. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
 
@@ -114,15 +114,15 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 ![](./images/web_action_workflow_token.png)
 
-Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
+**Copy the Web Action URL and save it in a notepad, you will need it later**. It should look something like this:
 
 https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Get%20Workflow%20Token
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
-![](./images/back_to_actions.png)
+<img src="./images/back_to_actions.png" width="75%">
 
-Then repeat the previous process. Create (click "Create" button) new action called: **Start Address Change Workflow** and paste the following code:
+Then repeat the previous process. Create (click "Create" button) new action called: **Start Address Change Workflow** and paste in the following code:
 
 ```Javascript
 /**
@@ -191,9 +191,9 @@ exports.main = main;
 
 This code will use the authentication token from the previous action and call the BAW with the data we enter in the Watson Assistant chatbot.
 
-**(6)** You only need to make a small change to this code.
+**(6)** Again, you only need to make a small change to this code.
 
-- Replace `port=XXXX` with the value of your environment port. Note that your port number might be 4 or 5 numbers long.
+- Replace `port=XXXXX` with the value of your environment port given by your instructor and note that your port number might be 4 or 5 numbers long.
 
 Now hit `Save`.
 
@@ -201,12 +201,12 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 ![](./images/web_action_address_change.png)
 
-Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
+Copy the Web Action URL and save it in a notepad, you will need it later. It should look something like this:
 
 https://eu-gb.functions.cloud.ibm.com/api/v1/web/jkj-org_dev/default/Start%20Address%20Change%20Workflow
 
 
-**(7)** We've now successfully created two _**IBM Cloud Function**_ actions that can accept text as input and talk to the BAW API that will later launch the Handle Address Change workflow. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
+**(7)** We've now successfully created two IBM Cloud Functions *actions* to "talk" to our IBM Business Automation Workflow API and to launch the *Handle Address Change* workflow. The final thing we need to do here is to make the actions callable from our _**Watson Assistant**_ (or in fact, any other application).
 
 Now let's go and use our functions in _**Watson Assistant**_.
 
@@ -231,7 +231,7 @@ Under the 'Then set context' there is a variable called `$private` with the valu
 
 Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
 
-![](./images/welcome_node_api_key.png)
+![](./images/welcome_node_api_key_new.png)
 
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
