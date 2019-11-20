@@ -81,6 +81,6 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 
 ``If you have configured everything correctly, you should now see a new active instance in your search results list!``
 
-xxxx
+**Click the instance** to select it and bring up the instance information panel to the right-hand side of the view. You can then expand the **Data** section and the **data(Customerdata)** object to see the data that your Watson Assistant collected via its dialog and sent to your BAW workflow. Nice!
 
 ![](./images/new_instance.png)
