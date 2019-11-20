@@ -20,9 +20,9 @@ Within the virtual desktop, open Chrome and navigate to **BAW** Login (Bookmark 
 
 After we have logged into Workflow Center, we want to select ``Process Apps``. From Process Apps, select and open the Process Application created for this workshop -> ``AWiB-workflow`` (click the blue "AW circle" within its tile).
 
-When the Process Application opens in web process designer, click ``Processes`` from the left-hand side navigation bar and then from the opened menu ``Handle data change``. This will open our workflow model - the one that our Watson Assistant triggers - in designer.
+When the Process Application opens in web process designer, click ``Processes`` from the left-hand side navigation bar and then from the opened menu ``Handle data change``. This will open our workflow model - the one that our Watson Assistant triggers - in web designer.
 
-![](./images/BAW_Workflow.gif)
+![](./images/BAW_Workflow_new.gif)
 
 ### Quick guide on workflows
 This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like).
