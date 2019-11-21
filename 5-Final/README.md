@@ -95,7 +95,7 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 
 ``If you do not see a new instance appearing in 15 seconds and after hitting the **Refresh** button again (when you trigger the workflow for the fist time it might take some time before the instance appears), then your configuration has some errors and you need to troubleshoot.``
 
-If you DO see the instance, you can remove it from the list by first _terminating_ it from the instance information panel controls and then _deleting_ it (look at the instructions above under "_Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running: How to remove the instances_"). When done, you can move on to the final test!
+If you DO see the instance, **remove it from the list** by first _terminating_ it from the instance information panel controls and then _deleting_ it (if needed, look at the instructions above under "_Open your BAW web designer INSPECTOR view and make sure you do not have any previous workflow instances running: How to remove the instances_"). When done, you can move on to the final test!
 
 > Troubleshooting
 
@@ -108,9 +108,9 @@ If you DO see the instance, you can remove it from the list by first _terminatin
 
 **Now you are really close to finishing the exercise!** What we will do next is to repeat the last step (triggering the workflow with Watson Assistant) with our RPA also running.
 
-**1.** Within your virtual environment access / open your RPA client (if not already open). You should open the **main** client window, not the **editor** window that you used to develop the _YTJ implementation bot_.
+**1.** Within your virtual environment access / open your RPA client (if not already open). You should open the **main** client window, not the **editor/workbench** window that you used to develop the _YTJ implementation bot_. In fact, if you still have **the editor** window open, please close it.
 
-KUVA!
+![](./images/rpa_main.png)
 
 **2.** Open the xxx folder and start the **Loop over...** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
 
