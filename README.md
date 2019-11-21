@@ -2,7 +2,7 @@
 # IBM Digital Business Automation Workshop Exercise - How to combine different automation capabilities
 ## Virtual Agent with IBM DBA (Business Automation Workflow and Robotic Process Automation)
 ### Use case
-Banks corporate customers address details have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in order to notify bank of the address change.
+The address information of a corporate customer of a bank have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in order to notify the bank of their changed address information.
 
 Bank uses AI (**IBM Watson Assistant service**) to collect the changed address information from the customer in a humanlike chatbot dialog. After all valid information has been collected (business id, company name and address information) - virtual assistant initiates **a managed business workflow** that orchestrates the actual information change into banks CRM system.  
 
