@@ -100,3 +100,11 @@ If you DO see the instance, you can remove it from the list by first _terminatin
 ## Final test with RPA included
 
 **Now you are really close to finishing the exercise!** What we will do next is to repeat the last step (triggering the workflow with Watson Assistant) with our RPA also running.
+
+**1.** Within your virtual environment access / open your RPA client (if not already open). You should open the **main** client window, not the **editor** window that you used to develop the _YTJ implemantation bot_.
+
+KUVA!
+
+**2.** Open the xxx folder and start the **Loop over...** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
+
+XXXX
