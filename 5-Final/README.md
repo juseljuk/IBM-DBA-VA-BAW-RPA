@@ -170,3 +170,13 @@ Click the **magnifying glass** icon on top navigation bar. The search view shoul
 ![](./images/validate_data_ui.png)
 
 Now our handler, responsible to make sure that the customer informed data is valid, can see both the data provided by the customer via your Watson Assistant (*Customer informed data*) AND the data that your RPA bot gathered from YTJ site (*YTJ data*). What do you think? Should the handler decline or approve?
+
+I think we should **decline** since the street address and the post code are not the same. It happens that you used IBM Finland's visiting address when you answered the questions of your *Virtual Assistant*, not the official post address that RPA gathered from YTJ site.
+
+Click the **Decline** button and when you see "The service has finished" text, you can close the window.
+
+Back in the **INSPECTOR** you should see that the workflow instance has now **completed**. From the instance information panel, under the **Tasks** section, you can see all the tasks/activities that were conducted when running through the workflow.
+
+Since you declined the data change, you can see that after *Validata data* step the workflow proceeded to *Notify customer of rejection*. Obviouslym should you have accepted, the workflow would have chosen another path, first storing the address data to CRM and then notifying the customer of approval. Makes sense?
+
+![](./images/instance_finished.png)
