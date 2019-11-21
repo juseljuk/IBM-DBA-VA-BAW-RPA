@@ -107,4 +107,6 @@ KUVA!
 
 **2.** Open the xxx folder and start the **Loop over...** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
 
-XXXX
+KUVA!
+
+You should see a small "Run window" appearing to your screens right-hand side bottom corner. 
