@@ -183,4 +183,8 @@ Since you declined the data change, you can see that after *Validata data* step 
 
 # CONGRATULATIONS!!
 
-You made it! You just ran through the hole end-to-end solution! Great stuff!
+You made it! You just ran through the hole end-to-end solution! Great stuff! Hope you enjoyed doing the labs and ultimately got some idea how we can start combining different technologies and automation capabilities together to facilitate end-to-end automation solutions.
+
+We just want to mention a couple of things here at the end of the exercise.
+
+> As you noticed, we tested the solution using the integrated testing capabilities of the Watson Assistant, IBM Cloud Functions, IBM Business Automation Workflow and IBM RPA platform. Obviously, in real life we would deploy/integrate our Watson assistant to a web site or to our channel application, workflow participants (here our handler checking the address data) would be notified of waiting tasks and they would access the tasks using a workflow portal or with more integrated manner from their corporate workspaces and finally the RPA bots would be running somewhere (virtual servers on premises or in cloud) executing their tasks without any direct supervision as part of managed workflows.
