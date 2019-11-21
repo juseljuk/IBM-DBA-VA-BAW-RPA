@@ -112,8 +112,10 @@ If you DO see the instance, **remove it from the list** by first _terminating_ i
 
 ![](./images/rpa_main.png)
 
-**2.** Open the xxx folder and start the **Loop over...** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
+**2.** Open the _**IBM DBA with Virtual Agent**_ folder and start the **Loop over IBM Business Automation Workflow tasks.atmx** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
 
-KUVA!
+When you run the task bot, you should see a small "Run window" appearing to your screens right-hand side bottom corner.
 
-You should see a small "Run window" appearing to your screens right-hand side bottom corner.
+<img src="./images/rpa_runtime.png" width="50%">
+
+XXXX
