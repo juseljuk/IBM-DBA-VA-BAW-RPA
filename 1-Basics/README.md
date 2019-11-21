@@ -97,7 +97,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 **(1)** Select `Assistants` from the menu bar and `Create new`.
 
-![](./images/01-create-assistant_new.jpg)
+![](./images/01-create-assistant.jpg)
 
 **(2)** Add a **Name** and **Description** for your _Assistant_, and select `Create assistant`.
 
