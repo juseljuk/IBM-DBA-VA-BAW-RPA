@@ -180,3 +180,7 @@ Back in the **INSPECTOR** you should see that the workflow instance has now **co
 Since you declined the data change, you can see that after *Validata data* step the workflow proceeded to *Notify customer of rejection*. Obviously, should you have accepted, the workflow would have chosen another path, first storing the address data to CRM and then notifying the customer of approval. Makes sense?
 
 ![](./images/instance_finished.png)
+
+###CONGRATULATIONS!!!
+
+You made it! You just ran through the hole end-to-end solution! Great stuff!
