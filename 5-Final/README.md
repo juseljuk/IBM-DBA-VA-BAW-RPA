@@ -181,6 +181,6 @@ Since you declined the data change, you can see that after *Validata data* step 
 
 ![](./images/instance_finished.png)
 
-#CONGRATULATIONS!!
+# CONGRATULATIONS!!
 
 You made it! You just ran through the hole end-to-end solution! Great stuff!
