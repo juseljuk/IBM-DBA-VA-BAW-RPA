@@ -139,4 +139,8 @@ After running through the dialog, you should see this response:
 
 Nice! You should have successfully triggered a new *Handle data change* workflow instance and your RPA should be soon activated, when the *Loop over...* bot checks the situation again.
 
-Now, switch back to view your virtual environment and wait for RPA to activate. NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop!
+Now, **switch back to view your virtual environment** and wait for RPA to activate. NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop! When the RPA is activated. You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
+
+**4.** Inspect the status of your workflow instance and run the next task using the inspector view.
+
+XXXX
