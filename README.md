@@ -17,17 +17,17 @@ Workflow consists of both automated and manual tasks. _Robotic Process Automatio
 5. The rest of the workflow is fully automated and executes based on the decision handler made. If the change request was accepted, workflow would save new address information to banks CRM system and notify the customer, but if not, just notify the customer of the situation (address information change rejected).
 
 #### Content
-- [Assistant](#assistant)
+- [Virtual Assistant](#virtual-assistant)
 - [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow)
 - [Automation](#automation)
 - [Putting it all together!](#putting-it-all-together)  
 
 #### Prerequisites
 - [IBM Cloud](https://cloud.ibm.com) Account
-- Access to IBM Cloud image with [IBM RPA](https://www.ibm.com/automation/software/rpa) and [IBM BAW](https://www.ibm.com/products/business-automation-workflow) installed
+- Access to a virtual environment with [IBM RPA](https://www.ibm.com/automation/software/rpa) and [IBM BAW](https://www.ibm.com/products/business-automation-workflow) installed
 
 
-## Assistant
+## Virtual Assistant
 In this part we create our **Virtual Assistant / Chatbot** by importing a B2B Banking _skill_ to our Watson Assistant service. We also take a look at how our chatbot has been constructed and we can also test it out.
  - [LAB 1: Cognitive Chatbot Basics](./1-Basics)
 
