@@ -177,6 +177,6 @@ Click the **Decline** button and when you see "The service has finished" text, y
 
 Back in the **INSPECTOR** you should see that the workflow instance has now **completed**. From the instance information panel, under the **Tasks** section, you can see all the tasks/activities that were conducted when running through the workflow.
 
-Since you declined the data change, you can see that after *Validata data* step the workflow proceeded to *Notify customer of rejection*. Obviouslym should you have accepted, the workflow would have chosen another path, first storing the address data to CRM and then notifying the customer of approval. Makes sense?
+Since you declined the data change, you can see that after *Validata data* step the workflow proceeded to *Notify customer of rejection*. Obviously, should you have accepted, the workflow would have chosen another path, first storing the address data to CRM and then notifying the customer of approval. Makes sense?
 
 ![](./images/instance_finished.png)
