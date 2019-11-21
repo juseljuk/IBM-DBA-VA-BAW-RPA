@@ -107,7 +107,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 ![](./images/03-add-dialog-skill-2.jpg)
 
-<img src="./images/skill_added" width="50%">
+<img src="./images/skill_added.png" width="50%">
 
 **(4)** Your _Assistant_ should now look like this:
 
