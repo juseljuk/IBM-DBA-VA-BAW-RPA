@@ -124,7 +124,7 @@ What is actually happening "under the hood" is that the bot made a connection to
 
 <img src="./images/rpa_runtime.png" width="50%">
 
-Good! Now we have our RPA ready to action, when we trigger a new workflow instance from our Watson Assistant.
+Good! Now we have our RPA ready to action, when we trigger a new workflow instance from our Watson Assistant. _**Make sure to leave the small RPA Runtime Window open!**_
 
 **3.** Run through your Watson Assistant B2B Bank Bot dialog as you already earlier did, **BUT** this time use some real values:
 
@@ -143,12 +143,14 @@ After running through the dialog, you should see this response:
 
 Nice! You should have successfully triggered a new *Handle data change* workflow instance and your RPA should be soon activated, when the *Loop over...* bot checks the situation again.
 
-Now, **switch back to view your virtual environment** and wait for RPA to activate. NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop! When the RPA is activated. You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
+**4. Switch back to view your virtual environment** and wait for RPA to activate.
 
-Did you see your YTJ implementation bot running? It might take a minute or two before the RPA is activated. This depends on the cycle how the *Loop over... bot* is checking if there are open tasks for RPA.
+NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop! When the RPA is activated. You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
+
+Did you see your YTJ implementation bot running? It might take a minute or two before the RPA is activated. This depends on the cycle how the *Loop over...* bot is checking if there are open tasks for RPA.
 
 ``If you do not see your YTJ implementation bot running after 2 minutes, there might be something wrong with your environment. Ask your instructor for help.``
 
-**4.** Inspect the status of your workflow instance and run the next task using the inspector view.
+**5.** Inspect the status of your workflow instance and run the next task using the inspector view.
 
 XXXX
