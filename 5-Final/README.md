@@ -183,8 +183,12 @@ Since you declined the data change, you can see that after *Validata data* step 
 
 # CONGRATULATIONS!!
 
-You made it! You just ran through the hole end-to-end solution! Great stuff! Hope you enjoyed doing the labs and ultimately got some idea how we can start combining different technologies and automation capabilities together to facilitate end-to-end automation solutions.
+You made it! You just ran through the hole end-to-end solution! Great stuff! Finally, we want to mention a couple of things.
 
-We just want to mention a couple of things here at the end of the exercise.
+> As you noticed, we tested the solution using the integrated testing capabilities of the Watson Assistant, IBM Cloud Functions, IBM Business Automation Workflow and IBM RPA platform. Obviously, in real life we would deploy/integrate our Watson assistant to a web site or to our channel application, workflow participants (here our handler checking the address data) would be notified of their waiting tasks and they would access them using a workflow portal or with more integrated manner from their corporate workspaces and finally the RPA bots would be running somewhere (virtual servers on premises or in cloud) executing their tasks without any direct supervision as part of managed workflows.
 
-> As you noticed, we tested the solution using the integrated testing capabilities of the Watson Assistant, IBM Cloud Functions, IBM Business Automation Workflow and IBM RPA platform. Obviously, in real life we would deploy/integrate our Watson assistant to a web site or to our channel application, workflow participants (here our handler checking the address data) would be notified of waiting tasks and they would access the tasks using a workflow portal or with more integrated manner from their corporate workspaces and finally the RPA bots would be running somewhere (virtual servers on premises or in cloud) executing their tasks without any direct supervision as part of managed workflows.
+> The exercise is build around oversimplified use case and the purpose of course is not to build up a production ready automation solution. Also all the implementations are quite simple and lack the all the finesse that we would use for real production ready solutions. Idea here, of course, was to show you how we can start utilizing and combining different capabilities together to provide end-to-end AI assisted automation solutions.
+
+Hope you enjoyed doing the labs! Cheers!
+
+[Learn more about IBM Automation](https://www.ibm.com/automation)
