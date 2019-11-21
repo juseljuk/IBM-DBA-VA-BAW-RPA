@@ -6,11 +6,15 @@ Now it's time to pull all the things together and test our solution end-to-end. 
 
 ## Test your IBM Cloud Functions connection to BAW
 
-**1.** Open your IBM Cloud Functions view from your IBM Cloud account. Navigate to **_actions_**, open **Get Workflow Token** and in the code view, click the **Invoke** button from the right upper corner.
+**1.** Open your IBM Cloud Functions view from your IBM Cloud account.
+
+Navigate to **_actions_**, open **Get Workflow Token** and in the code view, click the **Invoke** button from the right upper corner.
 
 ![](./images/invoke_get_token.png)
 
-**2.** If everything is working as expected, you should see a successful activation. **Note!** When you run your action for the first time, it might take serveral seconds (even over 10 secs) to complete. So, be patient.
+**2.** If everything is working as expected, you should see a successful activation.
+
+**Note!** When you run your action for the first time, it might take serveral seconds (even over 10 secs) to complete. So, be patient.
 
 ![](./images/invoke_get_token_result.png)
 
@@ -140,6 +144,10 @@ After running through the dialog, you should see this response:
 Nice! You should have successfully triggered a new *Handle data change* workflow instance and your RPA should be soon activated, when the *Loop over...* bot checks the situation again.
 
 Now, **switch back to view your virtual environment** and wait for RPA to activate. NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop! When the RPA is activated. You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
+
+Did you see your YTJ implementation bot running? It might take a minute or two before the RPA is activated. This depends on the cycle how the *Loop over... bot* is checking if there are open tasks for RPA.
+
+``If you do not see your YTJ implementation bot running after 2 minutes, there might be something wrong with your environment. Ask your instructor for help.``
 
 **4.** Inspect the status of your workflow instance and run the next task using the inspector view.
 
