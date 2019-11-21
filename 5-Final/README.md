@@ -187,7 +187,7 @@ You made it! You just ran through the hole end-to-end solution! Great stuff! Fin
 
 > As you noticed, we tested the solution using the integrated testing capabilities of the Watson Assistant, IBM Cloud Functions, IBM Business Automation Workflow and IBM RPA platform. Obviously, in real life we would deploy/integrate our Watson assistant to a web site or to our channel application, workflow participants (here our handler checking the address data) would be notified of their waiting tasks and they would access them using a workflow portal or with more integrated manner from their corporate workspaces and finally the RPA bots would be running somewhere (virtual servers on premises or in cloud) executing their tasks without any direct supervision as part of managed workflows.
 
-> The exercise is build around oversimplified use case and the purpose of course is not to build up a production ready automation solution. Also all the implementations are quite simple and lack the all the finesse that we would use for real production ready solutions. Idea here, of course, was to show you how we can start utilizing and combining different capabilities together to provide end-to-end AI assisted automation solutions.
+> The exercise is build around oversimplified use case and the purpose of course is not to build up a production ready automation solution. Also all the implementations are quite simple and lack the finesse that we would use for real production ready solutions. Idea here, of course, was to show you how we can start utilizing and combining different capabilities together to provide end-to-end AI assisted automation solutions.
 
 Hope you enjoyed doing the labs! Cheers!
 
