@@ -145,9 +145,9 @@ Nice! You should have successfully triggered a new *Handle data change* workflow
 
 **4. Switch back to view your virtual environment** and wait for RPA to activate.
 
-NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop! When the RPA is activated. You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
+**NOTE! Hands off!** You do not want to mess with your RPA when it's running something in your desktop! You should see the bot you implemented - **YTJ implementation** - running and gathering the official address data for the company you defined for your Watson Assistant, IBM Finland.
 
-Did you see your YTJ implementation bot running? It might take a minute or two before the RPA is activated. This depends on the cycle how the *Loop over...* bot is checking if there are open tasks for RPA.
+Did you see your YTJ implementation bot running? It might take a minute or two before the RPA is activated. This depends on the cycle how the *Loop over...* bot is checking if there are any open tasks for RPA to start acting on.
 
 ``If you do not see your YTJ implementation bot running after 2 minutes, there might be something wrong with your environment. Ask your instructor for help.``
 
