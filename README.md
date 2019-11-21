@@ -36,7 +36,7 @@ Here we connect our chatbot to our managed workflow, so that our chatbot can tri
   - [LAB 2: Integrating Watson Assistant with IBM Business Automation Workflow (BAW)](./2-Functions)
 
 ## Automation
-For this part of the exercise you will be using a ``Virtual Machine``running on cloud that you access via your web browser. Your instructor will tell you how to access your environment.
+For this part of the exercise you will be using a ``virtual environment``running on cloud that you access via your web browser. Your instructor will tell you how to access your environment.
 - [LAB 3: Business Automation Workflow](./3-BAW)
 - [LAB 4: Robotic Process Automation](./4-RPA)
 
