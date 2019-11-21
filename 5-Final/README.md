@@ -114,8 +114,10 @@ If you DO see the instance, **remove it from the list** by first _terminating_ i
 
 **2.** Open the _**IBM DBA with Virtual Agent**_ folder and start the **Loop over IBM Business Automation Workflow tasks.atmx** task bot by _double clicking it_. Alternatively you can click it once to select it and then hit the **Run** icon from the top control bar.
 
-When you run the task bot, you should see a small "Run window" appearing to your screens right-hand side bottom corner.
+When you run the task bot, you should see a small "Run Time Window" appearing to your screens right-hand side bottom corner. This indicates that the *Loop over... bot* has started. The bot should proceed to line **26 of 41** and then halt.
+
+What is actually happening "under the hood" is that the bot made a connection to your BAW platform and checked if there are some **Handle data change** workflow instances started that wait for RPA to action (the first activity in the workflow: *Get info from YTJ*). Since you should not have any, the halts for a while and then checks the situation again after some time.
 
 <img src="./images/rpa_runtime.png" width="50%">
 
-XXXX
+Good! Now we have our RPA ready to action, if we trigger a new workflow instance from our Watson Assistant.
