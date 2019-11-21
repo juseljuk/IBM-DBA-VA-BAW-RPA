@@ -168,3 +168,5 @@ Click the **magnifying glass** icon on top navigation bar. The search view shoul
 **Click** the "Run" icon from the instance information panel to run the *Validate data* activity. Since this is activity is implemented as a *Human Task*, the UI designed for it will open in the new window.
 
 ![](./images/validate_data_ui.png)
+
+Now our handler, responsible to make sure that the customer informed data is valid, can see both the data provided by the customer via your Watson Assistant (*Customer informed data*) AND the data that your RPA bot gathered from YTJ site (*YTJ data*). What do you think? Should the handler decline or approve?
