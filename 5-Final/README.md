@@ -161,6 +161,10 @@ Switch to workflow **web designer** to it's **INSPECTOR search** view if not alr
 
 **Click** the instance to select it and bring up the *instance information panel* to the right of your screen. We can now see, under *Locations section* that your workflow has moved to the second activity, **Validate data**.
 
-**6.** Click the **magnifying glass** icon. The search view should close and you should see your workflow definition as shown in the picture below. Notice that you are still in **INSPECTOR** and you can see the workflow activity to which our workflow has now proceeded to, i.e. Validate data.
+Click the **magnifying glass** icon on top navigation bar. The search view should close and you should see your workflow definition as shown in the picture below. Notice that you are still in **INSPECTOR** and you can see the workflow activity to which our workflow has now proceeded to, i.e. Validate data.
 
 ![](./images/instance_started_definition.png)
+
+**Click** the "Run" icon from the instance information panel to run the *Validate data* activity. Since this is activity is implemented as a *Human Task*, the UI designed for it will open in the new window.
+
+![](./images/validate_data_ui.png)
