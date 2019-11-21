@@ -280,7 +280,7 @@ Just use the part **AFTER** the **.../web/*** !!!
 **NOTE2!**
 If your endpoint URL is missing ".json" from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
 
-![](./images/assistant_conf_2_done_new.png)
+![](./images/assistant_conf_2_done_new2.png)
 
 Finally click "the 3 dots menu" again and select "Close JSON Editor" to save your changes.
 
