@@ -2,21 +2,19 @@
 # IBM Digital Business Automation Workshop Exercise - How to combine different automation capabilities
 ## Virtual Agent with IBM DBA (Business Automation Workflow and Robotic Process Automation)
 ### Use case
-The address information of a corporate customer of a bank have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in order to notify the bank of their changed address information.
+The address information of a corporate customer of a bank have changed. Since the bank is providing a _Virtual Assistant_ service, customer initiates a discussion with the virtual assistant in order to notify the bank of changed address information.
 
-Bank uses AI (**IBM Watson Assistant service**) to collect the changed address information from the customer in a humanlike chatbot dialog. After all valid information has been collected (business id, company name and address information) - virtual assistant initiates **a managed business workflow** that orchestrates the actual information change into banks CRM system.  
+Bank uses AI (**IBM Watson Assistant service**) to collect the changed address information from the customer in a humanlike dialog. After all needed information has been collected (business id, company name and address information) - virtual assistant initiates **a managed business workflow** that orchestrates the actual information change into banks CRM system.  
 
-Workflow consists of both automated and manual tasks. _Robotic Process Automation (RPA)_ is used to supplement and validate the company details given by the customer from **ytj.fi** (a public corporate information service) web site.
-
-All information collected during the process are provided to a handler in modern UI, where handler can check that the information provided by the customer matches the one got from ytj.fi and then decide to accept or decline the new address information.
+Workflow consists of both automated and manual tasks. _Robotic Process Automation (RPA)_ is used to gather the official address information of the customer from the national corporate information web site **ytj.fi**. All information collected are provided to a human handler in modern UI, where handler can check that the information provided by the customer matches the one got from the ytj.fi web site and then decide to accept or decline the new address information.
 
 ![](./Images/overall.png)
 
-1. Customer has a discussion with our virtual agent (implemented with Watson Assistant service) to inform us about their new address.
-2. Our virtual agent gathers the needed address information and their business id from the customer and then starts a managed workflow (running on IBM Business Automation Workflow environment) to handle this new information.
+1. Customer has a discussion with our virtual agent (implemented with Watson Assistant service) to inform the bank of their new address.
+2. Virtual agent gathers the needed address information and their business id from the customer and then starts a managed workflow (running on IBM Business Automation Workflow environment) to handle this new information.
 3. First, the workflow triggers a RPA bot (implemented with IBM RPA) that opens the YTJ-site and makes a search using the business id given by the customer. Bot then extracts the official address information from YTJ for that specific business id and sends the results back to the workflow.
-4. When our bot has gathered the official address information from YTJ, workflow automatically moves forward to its next step. It brings up a human task that one of our employees need to handle. Workflow shows an UI with both the information customer provided and the information that our bot gathered from YTJ. Now our handler can inspect if these match and can then decide to accept or decline the address information change for the customer.
-5. The rest of the workflow is fully automated and executes based on the decision our handler made. If the change request was accepted, workflow would save new address information to our CRM system and notify the customer, but if not, just notify the customer of the situation.
+4. When the bot has gathered the official address information from YTJ, workflow automatically moves forward to its next step. It brings up a human task that one of banks employees need to handle. Workflow shows an UI with both the information customer provided and the information that the bot gathered from YTJ. Now the handler can inspect if these match and can then decide to accept or decline the address information change for the customer.
+5. The rest of the workflow is fully automated and executes based on the decision handler made. If the change request was accepted, workflow would save new address information to banks CRM system and notify the customer, but if not, just notify the customer of the situation (address information change rejected).
 
 #### Content
 - [Assistant](#assistant)
