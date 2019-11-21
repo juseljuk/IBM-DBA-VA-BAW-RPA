@@ -77,8 +77,13 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 - Type in something (does not really matter what) for the _**city**_.
 - Click **Yes** when the dialog shows the collected information and asks if it's correct.
 
-   *If you see an error here, then your Get Workflow Token dialog node is not configured correctly. See "Troubleshooting Get Workflow Token" below*.
+   *NOTE! If you see an error here, then your Get Workflow Token dialog node is not configured correctly. See "Troubleshooting Get Workflow Token node" below*.
 - Click **No thanks** when the dialog asks if you want an email confirmation.
+
+> Troubleshooting Get Workflow Token
+
+- If see an error after accepting the gathered address information when your run through your Watson Assistant dialog, it's most probably caused by a misconfiguration of the *Get Workflow Token* dialog node in your B2B Bank Bot skill.
+- Please revisit the **Lab 2** where you configured the node with your IBM Cloud Functions web action URL and make sure that you have configured your node as instructed (Lab2, Setup Watson Assistant to use IBM Cloud Functions: Step 3)
 
 **4.** Move back to your **INSPECTOR view** in your virtual environment and hit the **Refresh** button.
 
