@@ -76,7 +76,8 @@ We can run through our Watson Assistant **dialog** and test, if we can trigger a
 - Type in something (does not really matter what) for the _**postcode**_.
 - Type in something (does not really matter what) for the _**city**_.
 - Click **Yes** when the dialog shows the collected information and asks if it's correct.
-      *If you see an error here, then your Get Workflow Token dialog node is not configured correctly. See "Troubleshooting Get Workflow Token" below*.
+
+   *If you see an error here, then your Get Workflow Token dialog node is not configured correctly. See "Troubleshooting Get Workflow Token" below*.
 - Click **No thanks** when the dialog asks if you want an email confirmation.
 
 **4.** Move back to your **INSPECTOR view** in your virtual environment and hit the **Refresh** button.
