@@ -124,7 +124,7 @@ What is actually happening "under the hood" is that the bot made a connection to
 
 <img src="./images/rpa_runtime.png" width="50%">
 
-Good! Now we have our RPA ready to action, when we trigger a new workflow instance from our Watson Assistant. _**Make sure to leave the small RPA Runtime Window open!**_
+Good! Now we have our RPA ready to action, when we trigger a new workflow instance from our Watson Assistant. _**Make sure to leave the small RPA Run Time Window open!**_
 
 **3.** Run through your Watson Assistant B2B Bank Bot dialog as you already earlier did, **BUT** this time use some real values:
 
@@ -153,4 +153,8 @@ Did you see your YTJ implementation bot running? It might take a minute or two b
 
 **5.** Inspect the status of your workflow instance and run the next task using the inspector view.
 
-XXXX
+After your YTJ implementation bot has executed the *Loop over...* bot automatically notifies our *Handle data change* workflow instance that the first activity of the workflow (Robot Task *Get info from YTJ*) is now completed. This might take a while, but when you see your RPA **Run Time Window** again halting to line **26 of 41**, the operation should be fully completed.
+
+Switch to workflow **web designer** to it's **INSPECTOR search** view if not already open. Click the **Refresh** button and you should see an active workflow instance in the search results list.
+
+![](./images/instance_started.png)
