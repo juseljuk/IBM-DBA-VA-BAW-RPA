@@ -116,8 +116,27 @@ If you DO see the instance, **remove it from the list** by first _terminating_ i
 
 When you run the task bot, you should see a small "Run Time Window" appearing to your screens right-hand side bottom corner. This indicates that the *Loop over... bot* has started. The bot should proceed to line **26 of 41** and then halt.
 
-What is actually happening "under the hood" is that the bot made a connection to your BAW platform and checked if there are some **Handle data change** workflow instances started that wait for RPA to action (the first activity in the workflow: *Get info from YTJ*). Since you should not have any, the halts for a while and then checks the situation again after some time.
+What is actually happening "under the hood" is that the bot made a connection to your BAW platform and checked if there are some **Handle data change** workflow instances started that wait for RPA to action (the first activity in the workflow: *Get info from YTJ*). Since you should not have any, the bot halts for a while and then checks the situation again after some time.
 
 <img src="./images/rpa_runtime.png" width="50%">
 
-Good! Now we have our RPA ready to action, if we trigger a new workflow instance from our Watson Assistant.
+Good! Now we have our RPA ready to action, when we trigger a new workflow instance from our Watson Assistant.
+
+**3.** Run through your Watson Assistant B2B Bank Bot dialog as you already earlier did, **BUT** this time use some real values:
+
+- Select **Address change**
+- Type in **IBM Finland** for the _**company name**_.
+- Type in **0195876-3** for the _**business id**_.
+- Type in **Laajalahdentie 23** for the _**street address**_.
+- Type in **00330** for the _**postcode**_.
+- Type in **Helsinki** for the _**city**_.
+- Click **Yes** when the dialog shows the collected information and asks if it's correct.
+- Click **No thanks** when the dialog asks if you want an email confirmation.
+
+After running through the dialog, you should see this response:
+
+<img src="./images/dialog_finish.png" width="50%">
+
+Nice! You should have successfully triggered a new *Handle data change* workflow instance and your RPA should be soon activated, when the *Loop over...* bot checks the situation again.
+
+Now, switch back to view your virtual environment and wait for RPA to activate. NOTE! Hands off! You do not want to mess with your RPA when it's running something in your desktop!
