@@ -282,7 +282,7 @@ If your endpoint URL is missing ".json" from the end, **you need to add it!!** A
 
 ![](./images/assistant_conf_2_done_new3.png)
 
-Finally click "the 3 dots menu" again and select "Close JSON Editor" to save your changes.
+Finally click "the 3 dots menu" again to close the JSON editor and to save your changes.
 
 Fantastic! Continue with lab 3 to get started with the IBM Business Automation Workflow (BAW) and the Robotic Process Automation (RPA) part. Once you have the next labs running you will be able to call your managed workflow from your Watson Assistant chatbot!
 
