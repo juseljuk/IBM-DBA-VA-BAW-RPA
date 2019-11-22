@@ -265,9 +265,9 @@ After copying your end point URL to the configuration it should look similar to 
 ![](./images/set_assistant_config_2.png)
 
 
-**(4)** Find the node called _**Email given**_ (child node of Start workflow and Email notification) and click it to open its configuration.
+**(4)** Find the node called _**Thank you for information**_ and click to open its configuration.
 
-![](./images/email_given_new.png)
+![](./images/thank_you.png)
 
 Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-change-workflow-endpoint>` with the endpoint information you copied for your Start Address Change Workflow action. This is where we trigger the managed workflow that will later start the RPA process. It should look something like:
 
@@ -280,7 +280,7 @@ Just use the part **AFTER** the **.../web/*** !!!
 **NOTE2!**
 If your endpoint URL is missing ".json" from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
 
-![](./images/assistant_conf_2_done_new2.png)
+![](./images/assistant_conf_2_done_new3.png)
 
 Finally click "the 3 dots menu" again and select "Close JSON Editor" to save your changes.
 
