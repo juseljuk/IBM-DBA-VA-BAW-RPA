@@ -44,3 +44,6 @@ For this part of the exercise you will be using a ``virtual environment``running
 - [LAB 5: Our system in action](./5-Final)
 
 If you manage to finish the labs 1 to 4, you can test and run the hole solution together!
+
+> Author: Jukka Juselius (jukka.juselius@fi.ibm.com)
+Kudos: Matias Kovero and Sandra Calvo Martinez for helping with the first draft
