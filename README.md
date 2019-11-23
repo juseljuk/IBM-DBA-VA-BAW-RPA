@@ -47,4 +47,5 @@ If you manage to finish the labs 1 to 4, you can test and run the hole solution 
 
 ---
 _Author: Jukka Juselius (jukka.juselius@fi.ibm.com)_
+
 _Kudos: Matias Kovero and Sandra Calvo Martinez for helping with the first draft_
