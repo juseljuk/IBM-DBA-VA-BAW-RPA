@@ -43,7 +43,7 @@ For location keep / select **London**. Scroll down and ensure you are using the 
 
 Due to time contrains in this session we will import an existing skill. This is basic B2B bank support chatbot conversation, where we will add in the integration to Business Automation Workflow.  
 
-Download the skill from this link: https://ibm.box.com/v/B2B-Bank-Bot
+Download the skill from this link: https://ibm.box.com/v/B2B-Bank-Bot [B2B Bank Bot](./assistant/skill-B2B-Bank-Bot.json)
 
 There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file in your computer and choose to import Everything.
 

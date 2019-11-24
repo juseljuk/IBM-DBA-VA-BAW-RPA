@@ -1,0 +1,832 @@
+{
+  "name": "B2B Bank Bot",
+  "type": "dialog",
+  "language": "en",
+  "skill_id": "b4a07906-d20a-4d8a-b294-9d3e85ebf53c",
+  "workspace": {
+    "intents": [
+      {
+        "intent": "wants_to_inform_about_address_change",
+        "examples": [
+          {
+            "text": "my address has changed"
+          },
+          {
+            "text": "i want to change my address information"
+          },
+          {
+            "text": "address change"
+          },
+          {
+            "text": "my company address has changed"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "new_account_creation",
+        "examples": [
+          {
+            "text": "new account creation"
+          },
+          {
+            "text": "new account please"
+          },
+          {
+            "text": "i want to create a new account"
+          }
+        ]
+      },
+      {
+        "intent": "saldo_inquiry",
+        "examples": [
+          {
+            "text": "show my saldo"
+          },
+          {
+            "text": "i want to check my saldo"
+          },
+          {
+            "text": "saldo inquiry"
+          }
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "entity": "yes",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "yes",
+            "synonyms": [
+              "yep",
+              "yeah",
+              "sure"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "no",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "no",
+            "synonyms": [
+              "nope",
+              "no way",
+              "no chance"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "start",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "start",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      }
+    ],
+    "metadata": {
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      }
+    },
+    "webhooks": [
+      {
+        "url": "",
+        "name": "main_webhook",
+        "headers": []
+      }
+    ],
+    "dialog_nodes": [
+      {
+        "type": "response_condition",
+        "title": "response_3_1568751999463",
+        "output": {
+          "text": {
+            "values": [
+              "Uups! It seems the connection to our systems is not working right now :( Let me connect you to our customer service, just one moment please!"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_9_1568751852062",
+        "conditions": "anything_else",
+        "dialog_node": "response_3_1568751999463",
+        "previous_sibling": "response_7_1568751967619"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_7_1568751967619",
+        "output": {
+          "text": {
+            "values": [
+              ""
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_9_1568751852062",
+        "context": {
+          "navigation": "start workflow"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_10_1568737861045"
+        },
+        "conditions": "$token_call_result.status == \"Success\"",
+        "dialog_node": "response_7_1568751967619"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_3_1568730528847",
+        "output": {
+          "text": {
+            "values": [
+              ""
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "Welcome",
+        "disabled": true,
+        "dialog_node": "response_3_1568730528847",
+        "previous_sibling": "response_7_1568730522795"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_7_1568730522795",
+        "output": {
+          "text": {
+            "values": [
+              "Hei olen "
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "Welcome",
+        "disabled": true,
+        "dialog_node": "response_7_1568730522795"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_7_1568753828034",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_5_1568745632846",
+        "actions": [
+          {
+            "name": "<your-get-workflow-token-endpoint>",
+            "type": "web_action",
+            "credentials": "$private.myCredentials",
+            "result_variable": "context.token_call_result"
+          }
+        ],
+        "conditions": "@yes",
+        "dialog_node": "response_7_1568753828034",
+        "previous_sibling": "node_9_1568751852062"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": []
+        },
+        "parent": "node_5_1568745632846",
+        "context": {
+          "navigation": "address info incorrect"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_4_1568730805538"
+        },
+        "conditions": "@no",
+        "dialog_node": "response_1_1574248967749",
+        "previous_sibling": "response_7_1568753828034"
+      },
+      {
+        "type": "standard",
+        "title": "Token fetched",
+        "parent": "node_5_1568745632846",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "true",
+        "dialog_node": "node_9_1568751852062"
+      },
+      {
+        "type": "standard",
+        "title": "Business name given",
+        "output": {
+          "text": {
+            "values": [
+              "Next I would need to know your company business id, Y-tunnus. Please type it in. (e.g. 0195876-3)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_4_1568730805538",
+        "context": {
+          "name": "<?input_text?>",
+          "navigation": "business id asked"
+        },
+        "conditions": "$navigation == \"company name asked\"",
+        "dialog_node": "node_4_1568756829918",
+        "previous_sibling": "response_3_1574249283997"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Oh, that's too bad. Let's start from the beginning. Type in your company name. (e.g. IBM Finland Oy)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_4_1568730805538",
+        "context": {
+          "navigation": "company name asked"
+        },
+        "conditions": "$navigation == \"address info incorrect\"",
+        "dialog_node": "response_3_1574249283997",
+        "previous_sibling": "response_4_1574249262277"
+      },
+      {
+        "type": "response_condition",
+        "output": {
+          "text": {
+            "values": [
+              "OK. Let's start by typing in the name of your company. (e.g. IBM Finland Oy)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_4_1568730805538",
+        "context": {
+          "navigation": "company name asked"
+        },
+        "conditions": "#wants_to_inform_about_address_change",
+        "dialog_node": "response_4_1574249262277"
+      },
+      {
+        "type": "event_handler",
+        "parent": "node_8_1568731053468",
+        "event_name": "focus",
+        "dialog_node": "handler_1_1568731304963",
+        "previous_sibling": "node_7_1568732313221"
+      },
+      {
+        "type": "slot",
+        "parent": "node_8_1568731053468",
+        "dialog_node": "slot_8_1568731305899",
+        "previous_sibling": "handler_1_1568731304963"
+      },
+      {
+        "type": "standard",
+        "title": "Street address given",
+        "output": {
+          "text": {
+            "values": [
+              "OK. What is your new postcode? (e.g. 00330)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_8_1568731053468",
+        "context": {
+          "navigation": "postcode asked",
+          "street_address": "<?input_text?>"
+        },
+        "conditions": "$navigation == \"street address asked\"",
+        "dialog_node": "node_7_1568732313221"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_8_1568731305899",
+        "event_name": "focus",
+        "dialog_node": "handler_5_1568731305909",
+        "previous_sibling": "handler_8_1568731305909"
+      },
+      {
+        "type": "event_handler",
+        "parent": "slot_8_1568731305899",
+        "event_name": "input",
+        "dialog_node": "handler_8_1568731305909"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_1_1568755786154",
+        "output": {
+          "text": {
+            "values": [
+              "OK, that's fine."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_8_1568738294836",
+        "context": {
+          "navigation": "thanks for the info"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_4_1568756433032"
+        },
+        "conditions": "@no",
+        "dialog_node": "response_1_1568755786154",
+        "previous_sibling": "response_7_1568755714633"
+      },
+      {
+        "type": "response_condition",
+        "title": "response_7_1568755714633",
+        "output": {
+          "text": {
+            "values": [
+              "OK. Please type in your email. (e.g. juseman9\\@gmail.com)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_8_1568738294836",
+        "context": {
+          "navigation": "email asked"
+        },
+        "conditions": "@yes",
+        "dialog_node": "response_7_1568755714633",
+        "previous_sibling": "node_10_1568758048961"
+      },
+      {
+        "type": "standard",
+        "title": "Email given",
+        "output": {
+          "text": {
+            "values": [],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_8_1568738294836",
+        "context": {
+          "email": "<?input_text?>",
+          "navigation": "thanks for the info"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_4_1568756433032"
+        },
+        "conditions": "$navigation == \"email asked\"",
+        "dialog_node": "node_10_1568758048961"
+      },
+      {
+        "type": "standard",
+        "title": "Postcode given",
+        "output": {
+          "text": {
+            "values": [
+              "And finally, what's the city / municipality name? (e.g. Helsinki)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_7_1568732313221",
+        "context": {
+          "postcode": "<?input_text?>",
+          "navigation": "summary"
+        },
+        "conditions": "$navigation == \"postcode asked\"",
+        "dialog_node": "node_6_1568732438267"
+      },
+      {
+        "type": "standard",
+        "title": "Summary",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "OK, all done! So, your new address is: $street_address, $postcode $city?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "title": "",
+              "options": [
+                {
+                  "label": "Yes",
+                  "value": {
+                    "input": {
+                      "text": "yes"
+                    }
+                  }
+                },
+                {
+                  "label": "No",
+                  "value": {
+                    "input": {
+                      "text": "no"
+                    }
+                  }
+                }
+              ],
+              "response_type": "option"
+            }
+          ]
+        },
+        "parent": "node_6_1568732438267",
+        "context": {
+          "city": "<?input_text?>",
+          "navigation": "Get Workflow Token"
+        },
+        "conditions": "$navigation == \"summary\"",
+        "dialog_node": "node_3_1568737167243"
+      },
+      {
+        "type": "standard",
+        "title": "Business ID given",
+        "output": {
+          "text": {
+            "values": [
+              "Good. Could you then type in your new street address, thank you.  (e.g. Laajalahdentie 23)"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_4_1568756829918",
+        "context": {
+          "navigation": "street address asked",
+          "business_id": "<?input_text?>"
+        },
+        "conditions": "$navigation == \"business id asked\"",
+        "dialog_node": "node_8_1568731053468"
+      },
+      {
+        "type": "standard",
+        "title": "New Account Creation",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I'm sorry to inform that currently I am not able to assist in account creation."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1574201257739",
+        "context": {
+          "returning": "all done"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_3_1568791823164"
+        },
+        "conditions": "#new_account_creation",
+        "dialog_node": "node_7_1574201606338",
+        "previous_sibling": "node_1_1574201293345"
+      },
+      {
+        "type": "standard",
+        "title": "Saldo Inquiry",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I'm sorry. Currently I can not access saldo information."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1574201257739",
+        "context": {
+          "returning": "all done"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_3_1568791823164"
+        },
+        "conditions": "#saldo_inquiry",
+        "dialog_node": "node_1_1574201293345"
+      },
+      {
+        "type": "standard",
+        "title": "Email notification",
+        "parent": "node_10_1568737861045",
+        "metadata": {
+          "callout": {
+            "name": "main_webhook",
+            "type": "webhook",
+            "parameters": {
+              "": ""
+            },
+            "result_variable": "webhook_result_1"
+          },
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "$navigation == \"email notification\"",
+        "dialog_node": "node_8_1568738294836"
+      },
+      {
+        "type": "folder",
+        "title": "Still missing intents",
+        "dialog_node": "node_1_1574201257739",
+        "previous_sibling": "Welcome"
+      },
+      {
+        "type": "standard",
+        "title": "Start workflow",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Good, everything set! Would you like us to inform you via email how we proceed in processing your information?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "title": "",
+              "options": [
+                {
+                  "label": "Yes please!",
+                  "value": {
+                    "input": {
+                      "text": "yes"
+                    }
+                  }
+                },
+                {
+                  "label": "No thanks.",
+                  "value": {
+                    "input": {
+                      "text": "no"
+                    }
+                  }
+                }
+              ],
+              "response_type": "option"
+            }
+          ]
+        },
+        "context": {
+          "token": "$token_call_result.token",
+          "navigation": "email notification"
+        },
+        "conditions": "$navigation == \"start workflow\"",
+        "dialog_node": "node_10_1568737861045",
+        "previous_sibling": "node_5_1568745632846"
+      },
+      {
+        "type": "standard",
+        "title": "Get Workflow Token",
+        "metadata": {
+          "callout": {
+            "name": "main_webhook",
+            "type": "webhook",
+            "parameters": {
+              "": ""
+            },
+            "result_variable": "webhook_result_2"
+          },
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "next_step": {
+          "behavior": "skip_user_input"
+        },
+        "conditions": "$navigation == \"Get Workflow Token\" && @yes || @no",
+        "dialog_node": "node_5_1568745632846",
+        "previous_sibling": "node_4_1568730805538"
+      },
+      {
+        "type": "standard",
+        "title": "Address Change",
+        "metadata": {
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "conditions": "#wants_to_inform_about_address_change",
+        "dialog_node": "node_4_1568730805538",
+        "previous_sibling": "node_3_1568791823164"
+      },
+      {
+        "type": "standard",
+        "title": "Returning",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Anything else I could do for you? I can help you with:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "title": "",
+              "options": [
+                {
+                  "label": "Address change",
+                  "value": {
+                    "input": {
+                      "text": "address change"
+                    }
+                  }
+                },
+                {
+                  "label": "Saldo inquiry",
+                  "value": {
+                    "input": {
+                      "text": "saldo inquiry"
+                    }
+                  }
+                },
+                {
+                  "label": "New account creation",
+                  "value": {
+                    "input": {
+                      "text": "new account creation"
+                    }
+                  }
+                }
+              ],
+              "response_type": "option"
+            }
+          ]
+        },
+        "context": {
+          "returning": "not set"
+        },
+        "conditions": "$returning == \"all done\"",
+        "dialog_node": "node_3_1568791823164",
+        "previous_sibling": "node_1_1574201257739"
+      },
+      {
+        "type": "standard",
+        "title": "Anything else",
+        "output": {
+          "text": {
+            "values": [
+              "I didn't understand. You can try rephrasing.",
+              "Can you reword your statement? I'm not understanding.",
+              "I didn't get your meaning."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "conditions": "anything_else",
+        "dialog_node": "Anything else",
+        "previous_sibling": "node_4_1568756433032"
+      },
+      {
+        "type": "standard",
+        "title": "Thank you for information",
+        "output": {
+          "text": {
+            "values": [
+              "Thank you for the information! We are now processing your data."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "actions": [
+          {
+            "name": "<your-start-address-change-workflow-endpoint>",
+            "type": "web_action",
+            "parameters": {
+              "city": "$city",
+              "name": "$name",
+              "token": "$token",
+              "postcode": "$postcode",
+              "business_id": "$business_id",
+              "street_address": "$street_address"
+            },
+            "credentials": "$private.myCredentials",
+            "result_variable": "context.start_call_result"
+          }
+        ],
+        "context": {
+          "returning": "all done"
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "condition",
+          "dialog_node": "node_3_1568791823164"
+        },
+        "conditions": "$navigation == \"thanks for the info\"",
+        "dialog_node": "node_4_1568756433032",
+        "previous_sibling": "node_10_1568737861045"
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hi there! I'm a bank helper for our corporate customers. Currently I can help you with:"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            },
+            {
+              "title": "",
+              "options": [
+                {
+                  "label": "Address change",
+                  "value": {
+                    "input": {
+                      "text": "address change"
+                    }
+                  }
+                },
+                {
+                  "label": "Saldo inquiry",
+                  "value": {
+                    "input": {
+                      "text": "saldo inquiry"
+                    }
+                  }
+                },
+                {
+                  "label": "New account creation",
+                  "value": {
+                    "input": {
+                      "text": "account creation"
+                    }
+                  }
+                }
+              ],
+              "response_type": "option"
+            }
+          ]
+        },
+        "context": {
+          "private": {
+            "myCredentials": {
+              "api_key": "<your-ibm-cloud-functions-api-key>"
+            }
+          }
+        },
+        "metadata": {
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "conditions": "welcome ||  @start",
+        "dialog_node": "Welcome"
+      }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+      "tooling": {
+        "store_generic_responses": true
+      },
+      "spelling_auto_correct": false
+    },
+    "learning_opt_out": false
+  },
+  "description": "",
+  "workspace_id": "b4a07906-d20a-4d8a-b294-9d3e85ebf53c"
+}
