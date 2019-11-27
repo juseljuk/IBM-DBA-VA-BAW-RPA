@@ -56,6 +56,6 @@ When you open an ``UI node / Human task activity`` (Validate data), the so calle
 We have defined that it the flow will continue depending on what button (Approve or Decline) the user has pressed. Based on that decision, we will either run `Success`or `Decline` Script Task to set the variable *data_validated*.
 
 ### Summary
-Well done! You've now explored a few of the basic elements of IBM Business Automation Workflow. Feel free to explore the diffrent nodes/activities and options on this workflow. Just do not change anything that has already been configured for your convenience :)
+Well done! You've now explored a few of the basic elements of IBM Business Automation Workflow. Feel free to explore the different nodes/activities and options on this workflow. _**Just do not change anything**_ that has already been configured for your convenience :)
 
 [CONTINUE TO THE NEXT LAB](../4-RPA)
