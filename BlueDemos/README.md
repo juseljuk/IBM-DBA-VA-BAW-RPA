@@ -18,8 +18,12 @@ When you reserved your environment from Blue Demos, you received an email with a
 
 ![](./images/env_json.png)
 
-## 2. Start your environment and the needed services
-Xxxx
+## 2. Start your virtual environment
+Navigate back to your environment portal (you can close the JSON definition) and start your environment by clicking the **"Play" icon** as shown in the picture below.
+
+![](./images/env_start.png)
+
+After clicking the play icon, your environment should start booting up. This will a minute or two and at this stage you can start working with the [Lab 1](../1-Basics) and after finishing it come back to your virtual environment.
 
 ## Agenda
 - Introduction to [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
