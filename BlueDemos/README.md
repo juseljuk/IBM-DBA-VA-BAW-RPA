@@ -10,9 +10,14 @@ When you reserved your environment from Blue Demos, you received an email with a
 
 **1)** Click the link and use the password provided to login and to bring up your environment portal.
 
-KUVA
+![](./images/env_portal.png)
 
-## 2. 
+**2)** Now, when logged in to your environment portal, copy the original link to your environment from the email, add to the end of the URL _".json"__ and use that to bring up the JSON definition file of your environment in your browser. The link to use should look something like this: _https://cloud.skytap.com/vms/ef54a7bd022cdfaf5XXXXXXXXXXXXXXXX/desktops.json_
+
+
+
+## 2. Start your environment and the needed services
+Xxxx
 
 ## Agenda
 - Introduction to [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
