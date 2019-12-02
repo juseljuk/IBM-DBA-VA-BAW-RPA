@@ -1,4 +1,4 @@
-# **Virtual Environment Setup**
+# **Lab 0: Setting Up Your Environment**
 If you have provisioned your virtual environment from [IBM Blue Demos site](https://bluedemos.com/show/3238) by reserving a demo instance, you need to
 1. _**find out the published service URL for your environment**_ (you need this in Lab 2) and
 2. _**start your environment and BAW and RPA services**_ before you proceed to Lab 3*.

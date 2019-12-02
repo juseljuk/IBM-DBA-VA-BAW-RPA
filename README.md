@@ -17,6 +17,7 @@ Workflow consists of both automated and manual tasks. _Robotic Process Automatio
 5. The rest of the workflow is fully automated and executes based on the decision handler made. If the change request was accepted, workflow would save new address information to banks CRM system and notify the customer, but if not, just notify the customer of the situation (address information change rejected).
 
 #### Content
+- [Blue Demos Environment](#blue-demos-environment)
 - [Virtual Assistant](#virtual-assistant)
 - [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow)
 - [Automation](#automation)
@@ -26,6 +27,10 @@ Workflow consists of both automated and manual tasks. _Robotic Process Automatio
 - [IBM Cloud](https://cloud.ibm.com) Account
 - Access to a virtual environment with [IBM RPA](https://www.ibm.com/automation/software/rpa) and [IBM BAW](https://www.ibm.com/products/business-automation-workflow) installed
 
+
+## Blue Demos Environment
+It you are running this exercise using yourself reserved IBM Blue Demos environment, you need to complete the _**LAB 0: Setting Up Your Environment**_. **NOTE!** If you are doing this exercise in a class room session with an instructor, you can skip this and go directly to LAB 1. Your instructor will provide separate instructions to access your virtual environment and some of the environment details that you need in LAB 2.
+  - [LAB 0: Setting Up Your Environment](./BlueDemos)
 
 ## Virtual Assistant
 In this part we create our **Virtual Assistant / Chatbot** by importing a B2B Banking _skill_ to our Watson Assistant service. We also take a look at how our chatbot has been constructed and we can also test it out.
