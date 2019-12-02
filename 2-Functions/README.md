@@ -104,7 +104,7 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 **(4)** You only need to make two small changes to this code.
 
-- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0.
+- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0. **Note that it needs to be WITHOUT the quotation marks, e.g. _services-emea.skytap.com_, NOT _"services-emea.skytap.com"_.
 - Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
@@ -195,7 +195,7 @@ This code will use the authentication token from the previous action and call th
 
 **(6)** Again, you only need to make two small changes to this code.
 
-- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0.
+- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0. **Note that it needs to be WITHOUT the quotation marks, e.g. _services-emea.skytap.com_, NOT _"services-emea.skytap.com"_.
 - Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
@@ -305,5 +305,7 @@ This is what the conversation will look like:
 
 
 The error at the end is due to the fact that you do not have your workflow environment yet running that your chatbot tries to call. Don't worry, we'll fix this in the next labs!
+
+**NOTE!** If you have already started your BAW in your virtual environment, you might not see the error. Nevertheless, you are done with this lab.
 
 [CONTINUE TO THE NEXT LAB](../3-BAW)
