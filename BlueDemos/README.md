@@ -25,7 +25,9 @@ Navigate back to your environment portal (you can close the JSON definition) and
 
 After clicking the play icon, your environment should start booting up. This will take a minute or two and at this stage you can start working with the [Lab 1](../1-Basics) and after finishing it come back to check the status of your virtual environment.
 
-## 2. Access your environment
+**NOTE!** If you see your virtual environment asking to run new updates, make sure to **DECLINE**. We do NOT want to start running any java or Windows updates on the virtual environment!
+
+## 3. Access your environment
 When your virtual environment is started, you should see the environment background changed to green in your environment portal. You can now access the environment by clicking the "display" icon of your environment tile.
 
 ![](./images/env_started.png)
@@ -33,3 +35,17 @@ When your virtual environment is started, you should see the environment backgro
 Your environments desktop should be opened within your browser. **We recommend that you fit the desktop in your browser window by clicking the "Fit to window" button from your desktop views control menu as shown in the picture below**. This will resize your environment desktop size to match your browser window size. **NOTE!** If you change the size of your browser window during the labs, you can always resize the desktop again using the "Fit to window" control.
 
 ![](./images/virtual_desktop.png)
+
+## 4. Start BAW and RPA services
+You need to start IBM Business Automation Workflow (BAW) and IBM RPA with Automation Anywhere services, before you start doing the Lab 3, **although we recommend you to start at least your BAW before starting the Lab 2**. BAW will take several minutes to get fully started and operational and if you launch it before you start the Lab 2, it will be up and running when you are ready to proceed to Lab 3.
+
+Open the **RUNTIMES** folder on your virtual desktop and double click _**BAW Server Start.cmd**_ to launch BAW.
+
+![](./images/baw_start.png)
+
+This will open a command window where you can see that your BAW is booting up. You can now leave your BAW to start and start doing the [Lab 2](../2-Functions) and when done, come back to check your environment.
+
+![](./images/baw_start_cmd.png)
+
+### BAW
+Open the
