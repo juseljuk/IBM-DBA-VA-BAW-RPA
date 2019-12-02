@@ -74,8 +74,8 @@ var options = {
     body: data
 };
 
-// Make sure you replace XXXX with your port number
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=<your_external_ip>&port=<your_external_port';
+// Make sure you replace your_external_ip and your_external_port with the values given by your instructor / what you got from Lab 0.
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=<your_external_ip>&port=<your_external_port>';
 
   try {
 
@@ -100,11 +100,12 @@ var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-work
 exports.main = main;
 ```
 
-This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token.
+This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token to call BAW actions.
 
-**(4)** You only need to make a small change to this code.
+**(4)** You only need to make two small changes to this code.
 
-- Replace `port=XXXXX` with the value of your environment port, given by your instructor. **Note that your port number might be 4 or 5 numbers long!**.
+- Replace `your_external_ip` with the value of your environment ip (DNS), given by your instructor / you got from Lab 0.
+- Replace `your_external_port` with the value of your environment port, given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
 
