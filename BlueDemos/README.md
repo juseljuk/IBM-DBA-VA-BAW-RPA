@@ -25,14 +25,14 @@ Navigate back to your environment portal (you can close the JSON definition) and
 
 After clicking the play icon, your environment should start booting up. This will take a minute or two and **at this stage we recommend you to start working with the [Lab 1](../1-Basics) and after finishing it come back to check the status of your virtual environment**.
 
-**NOTE!** If you see your virtual environment asking to run new updates, make sure to **DECLINE**. We do NOT want to start running any java or Windows updates on the virtual environment!
-
 ## 3. Access your environment
 When your virtual environment is started, you should see the environment background changed to green in your environment portal. You can now access the environment by clicking the "display" icon of your environment tile.
 
 ![](./images/env_started.png)
 
-Your environments desktop should be opened within your browser. **We recommend that you fit the desktop in your browser window by clicking the "Fit to window" button from your desktop views control menu as shown in the picture below**. This will resize your environment desktop size to match your browser window size. **NOTE!** If you change the size of your browser window during the labs, you can always resize the desktop again using the "Fit to window" control.
+Your environments desktop should be opened within your browser. **We recommend that you fit the desktop in your browser window by clicking the "Fit to window" button from your desktop views control menu as shown in the picture below**. This will resize your environment desktop size to match your browser window size. If you change the size of your browser window during the labs, you can always resize the desktop again using the "Fit to window" control.
+
+**NOTE!** If you see your virtual environment asking to run new updates, make sure to **DECLINE**. We do NOT want to start running any java or Windows updates on the virtual environment!
 
 ![](./images/virtual_desktop.png)
 

@@ -75,7 +75,7 @@ var options = {
 };
 
 // Make sure you replace XXXX with your port number
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?port=XXXXX';
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=<your_external_ip>&port=<your_external_port';
 
   try {
 
