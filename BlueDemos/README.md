@@ -1,7 +1,7 @@
 # **Lab 0: Setting Up Your Environment**
 If you have provisioned your virtual environment from [IBM Blue Demos site](https://bluedemos.com/show/3238) by reserving a demo instance, you need to
 1. _**find out the published service URL for your environment**_ (you need this in Lab 2) and
-2. _**start your environment and BAW and RPA services**_ before you proceed to Lab 3*.
+2. _**start your environment and BAW and RPA services**_ before you proceed to Lab 3.
 
 ## 1. Finding out your environments published service URL
 In order to trigger a managed workflow - and subsequently a RPA bot - from our Watson assistant service / IBM Cloud Functions actions, we need to know the URL and the port to use.
