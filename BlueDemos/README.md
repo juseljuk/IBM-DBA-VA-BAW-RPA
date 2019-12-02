@@ -12,7 +12,7 @@ When you reserved your environment from Blue Demos, you received an email with a
 
 ![](./images/env_portal.png)
 
-**2)** Now, when logged in to your environment portal, copy the original link to your environment from the email, add _**".json"**_ postfix to the end of the URL and use that to bring up the JSON definition file of your environment in your browser. The link to use should look something like this: _https://cloud.skytap.com/vms/ef54a7bd022cdfaf5XXXXXXXXXXXXXXXX/desktops.json_
+**2)** Now, when logged in to your environment portal, copy the original link to your environment from the email, add _**".json"**_ postfix to the end of the URL and use that to bring up the JSON definition file of your environment in your browser. The link to use should look something like this: _https://cloud.skytap.com/vms/ef54a7bd022cdfaf5XXXXXXXXXXXXXXXX/desktops**.json**_
 
 **3)** Find your _**external_ip**_ and _**external_port**_ definition as shown in the picture below (vms:0:interfaces:0:services:0). You need both of these values in Lab 2, so make sure to write them down.
 
