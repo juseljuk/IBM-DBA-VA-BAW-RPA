@@ -30,6 +30,6 @@ When your virtual environment is started, you should see the environment backgro
 
 ![](./images/env_started.png)
 
-Your environments desktop should be opened within your browser. **We recommend that you fit the desktop in your browser window by clicking the "fit to screen" button from your desktop views control menu as shown in the picture below**. This will resize your environment desktop size to match your browser window size. **NOTE!** If you change the size of your browser window during the labs, you can always resize the desktop again using the "fit to window" control.
+Your environments desktop should be opened within your browser. **We recommend that you fit the desktop in your browser window by clicking the "Fit to window" button from your desktop views control menu as shown in the picture below**. This will resize your environment desktop size to match your browser window size. **NOTE!** If you change the size of your browser window during the labs, you can always resize the desktop again using the "Fit to window" control.
 
 ![](./images/virtual_desktop.png)
