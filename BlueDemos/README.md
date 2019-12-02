@@ -55,6 +55,14 @@ Open the **RUNTIMES** folder on your virtual desktop and double click _**RPA Ser
 
 ![](./images/rpa_start.png)
 
-This will open a command prompt window where you can see that your RPA services are starting. After a while all the services have been started up and you will see the text "_Press any key to continue..._" at the bottom of your command prompt window. Hit any key to close the command prompt.
+This will open a command prompt window where you can see that your RPA services are starting.
 
 ![](./images/rpa_started.png)
+
+After a while all the services have been started up and you will see the text "_Press any key to continue..._" at the bottom of your command prompt window. Hit any key to close the command prompt.
+
+Good! You are now good to go with Lab 3! Just remember to finish Lab 2 first!
+
+[TO LAB 2](../2-Functions)
+[TO LAB 3](../3-BAW)
+[TO MAIN PAGE](../)
