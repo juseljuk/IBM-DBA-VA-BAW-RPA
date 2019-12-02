@@ -61,7 +61,9 @@ This will open a command prompt window where you can see that your RPA services 
 
 After a while all the services have been started up and you will see the text "_Press any key to continue..._" at the bottom of your command prompt window. Hit any key to close the command prompt.
 
-Good! You are now good to go with Lab 3! Just remember to finish Lab 2 first!
+Good! You are now good to go with Lab 3! **Just remember to finish Labs 1 and 2 first**!
+
+[TO LAB 1](../1-Basics)
 
 [TO LAB 2](../2-Functions)
 
