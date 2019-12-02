@@ -75,7 +75,7 @@ var options = {
 };
 
 // Make sure you replace your_external_ip and your_external_port with the values given by your instructor / what you got from Lab 0.
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=<your_external_ip>&port=<your_external_port>';
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=your_external_ip&port=your_external_port';
 
   try {
 
