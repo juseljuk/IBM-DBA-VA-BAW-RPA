@@ -74,8 +74,8 @@ var options = {
     body: data
 };
 
-// Make sure you replace your_external_ip and your_external_port with the values given by your instructor / what you got from Lab 0.
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?url=your_external_ip&port=your_external_port';
+// Make sure you replace 'your_external_ip' and 'your_external_port' with the values given by your instructor / what you got from Lab 0.
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/login?ip=your_external_ip&port=your_external_port';
 
   try {
 
@@ -104,8 +104,8 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 **(4)** You only need to make two small changes to this code.
 
-- Replace `your_external_ip` with the value of your environment ip (DNS), given by your instructor / you got from Lab 0.
-- Replace `your_external_port` with the value of your environment port, given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
+- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0.
+- Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
 
@@ -168,8 +168,8 @@ var options = {
     headers: headers,
 };
 
-//Replace the XXXX with your port number
-var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/process?model=Handle%20data%20change&container=AWIBWOR&port=XXXXX';
+// Make sure you replace 'your_external_ip' and 'your_external_port' with the values given by your instructor / what you got from Lab 0.
+var URL = 'https://api.eu-gb.apiconnect.appdomain.cloud/jkj-org-dev/sb/awib-workflow/process?model=Handle%20data%20change&container=AWIBWOR&ip=your_external_ip&port=your_external_port';
 
   try {
    let response = await needle(URL,JSON.stringify(payload),options);
@@ -193,9 +193,10 @@ exports.main = main;
 
 This code will use the authentication token from the previous action and call the BAW with the data we enter in the Watson Assistant chatbot.
 
-**(6)** Again, you only need to make a small change to this code.
+**(6)** Again, you only need to make two small changes to this code.
 
-- Replace `port=XXXXX` with the value of your environment port given by your instructor and note that your port number might be 4 or 5 numbers long.
+- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0.
+- Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
 
