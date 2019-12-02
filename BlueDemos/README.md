@@ -39,13 +39,22 @@ Your environments desktop should be opened within your browser. **We recommend t
 ## 4. Start BAW and RPA services
 You need to start IBM Business Automation Workflow (BAW) and IBM RPA with Automation Anywhere services, before you start doing the Lab 3, **although we recommend you to start at least your BAW before starting the Lab 2**. BAW will take several minutes to get fully started and operational and if you launch it before you start the Lab 2, it will be up and running when you are ready to proceed to Lab 3.
 
-Open the **RUNTIMES** folder on your virtual desktop and double click _**BAW Server Start.cmd**_ to launch BAW.
+###BAW
+Open the **RUNTIMES** folder on your virtual desktop and double click _**BAW Server START.cmd**_ to launch BAW.
 
 ![](./images/baw_start.png)
 
-This will open a command window where you can see that your BAW is booting up. You can now leave your BAW to start and start doing the [Lab 2](../2-Functions) and when done, come back to check your environment.
+This will open a command prompt window where you can see that your BAW is booting up. You can now leave your BAW to start and proceed to [Lab 2](../2-Functions) and when done, come back to check your environment.
+
+**NOTE!** When the command prompt window is closed - it closes automatically - it still takes some minutes before your environment is fully operational.
 
 ![](./images/baw_start_cmd.png)
 
-### BAW
-Open the
+### RPA
+Open the **RUNTIMES** folder on your virtual desktop and double click _**RPA Services START.cmd**_ to launch RPA.
+
+![](./images/rpa_start.png)
+
+This will open a command prompt window where you can see that your RPA services are starting. After a while all the services have been started up and you will see the text "_Press any key to continue..._" at the bottom of your command prompt window. Hit any key to close the command prompt.
+
+![](./images/rpa_started.png)
