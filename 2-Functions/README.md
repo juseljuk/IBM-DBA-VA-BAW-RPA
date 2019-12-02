@@ -104,7 +104,7 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 **(4)** You only need to make two small changes to this code.
 
-- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0. **Note that it needs to be WITHOUT the quotation marks, e.g. _services-emea.skytap.com_, NOT _"services-emea.skytap.com"_.
+- Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0. **Note that it needs to be WITHOUT the quotation marks, e.g. _services-emea.skytap.com_, NOT _"services-emea.skytap.com"_**.
 - Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
 
 Now hit `Save`.
