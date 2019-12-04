@@ -46,7 +46,7 @@ For this part of the exercise you will be using a ``virtual environment``running
 - [LAB 4: Robotic Process Automation](./4-RPA)
 
 ## Putting it all together!
-- [LAB 5: Our system in action](./5-Final)
+- [LAB 5: Our solution in action](./5-Final)
 
 If you manage to finish the labs 1 to 4, you can test and run the hole solution together!
 

@@ -14,7 +14,7 @@ When you reserved your environment from Blue Demos, you received an email with a
 
 **2)** Now, when logged in to your environment portal, copy the original link to your environment from the email, add _**".json"**_ postfix to the end of the URL and use that to bring up the JSON definition file of your environment in your browser. The link to use should look something like this: _https://cloud.skytap.com/vms/ef54a7bd022cdfaf5XXXXXXXXXXXXXXXX/desktops.json_
 
-**3)** Find your _**external_ip**_ and _**external_port**_ definition as shown in the picture below (vms:0:interfaces:0:services:0). You need both of these values in Lab 2, so make sure to write them down.
+**3)** Find your _**external_ip**_ and _**external_port**_ definition as shown in the picture below (vms:0:interfaces:0:services:0). You need both of these values in Lab 2, so make sure to write them down. Note that the value for _external_ip_ (DNS address of your enviroment proxy) depends on the region (EMEA, APAC-2, US-Central) you selected when reserving your environment.
 
 ![](./images/env_json.png)
 
@@ -61,7 +61,9 @@ This will open a command prompt window where you can see that your RPA services 
 
 After a while all the services have been started up and you will see the text "_Press any key to continue..._" at the bottom of your command prompt window. Hit any key to close the command prompt.
 
-Good! You are now good to go with Lab 3! Just remember to finish Lab 2 first!
+Good! You are now good to go with Lab 3! **Just remember to finish Labs 1 and 2 first**!
+
+[TO LAB 1](../1-Basics)
 
 [TO LAB 2](../2-Functions)
 
