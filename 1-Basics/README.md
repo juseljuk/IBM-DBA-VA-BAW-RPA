@@ -22,8 +22,8 @@ Anyone can build chatbots with **_Watson Assistant_** - it comes pre-trained wit
 In this section we are going to create a **_Watson Assistant_** instance on IBM Cloud, and use it to build a basic chatbot that answers queries about mobile phones.
 
 **(1)** Log into IBM Cloud and create a **_Watson Assistant_** service.
-- Click on `Catalog`, then filter by clicking on `AI`
-- Select `Watson Assistant`
+- Click on `(1) Catalog`, select `(2) Services` then filter by clicking on `(3) AI`
+- Select `(4) Watson Assistant`
 
 ![](./images/select_va_service.png)  
 
