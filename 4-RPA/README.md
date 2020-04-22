@@ -30,6 +30,8 @@ After that login  with ``username`` (__developer__) & ``password`` (__adminadmin
 
 ![](./images/RPA_Login.png)   
 
+Logging in for the first time might take a while, a minute or two. **Please, have some patience**.
+
 It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right.
 
 
