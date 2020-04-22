@@ -27,7 +27,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 ![](./images/select_va_service.png)  
 
-**(2)** For location keep / select **_London_** and make sure you have the `Lite` plan selected.
+**(2)** For region keep / select **_London_** and make sure you have the `Lite` plan selected.
 
 ![](./images/va_service_create.png)
 
@@ -37,7 +37,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 **(4)** Click on `Launch Watson Assistant`.
 
-![](./images/03-assistant-service-launch.jpg)
+![](./images/va_launch.png)
 
 ## Understanding user intent: create _**intents**_ and _**entities**_
 **(1)** The first thing we need to do in **_Watson Assistant_** is create a _**Skill**_. A _**skill**_ contains the training data and machine learning logic that enables your chatbot to understand and help users and customers.
