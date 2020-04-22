@@ -312,7 +312,7 @@ This is what the conversation will look like:
 <img src="./images/chat3_new.png" width="50%">
 
 
-If you see the error at the end, it's due to the fact you do not have your workflow environment yet running that your chatbot tries to call. Don't worry, we'll fix this in the next labs!
+If you see the error at the end, it's due to the fact you do not have your workflow environment yet running that your chatbot tries to call.
 
 **NOTE!** If you have already started your BAW in your virtual environment, you might not see the error. Nevertheless, you are done with this lab.
 
