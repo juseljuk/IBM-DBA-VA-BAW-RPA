@@ -85,6 +85,8 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 
 <img src="./images/chat1_new.png" width="50%">
 
+`NOTE:` If the dialog presents options to you, you can directly click the desired option or you can of course write it as your text input.
+
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
 You will be able to test the integration with the Business Automation Workflow once you get through the next 3 labs using the _**Address Change**_ option. :smile:
