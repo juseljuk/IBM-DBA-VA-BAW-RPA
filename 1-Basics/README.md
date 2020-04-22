@@ -122,15 +122,15 @@ The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Ac
 
 **(1)** Select the `Preview Link` that has already been created from `Integrations`:
 
-![](./images/preview_link_new.png)
+![](./images/preview_link.png)
 
 **(2)** You can change the **Name** and **Description** of the _Preview Link_ if you like. For now though, just click the URL under **Try it out and share the link**.
 
-<img src="./images/07-select-preview-url.jpg" width="75%">
+<img src="./images/select_preview_link.png" width="75%">
 
 **(3)** You'll then be taken to a web page where your chatbot is hosted within a widget:
 
-<img src="./images/assistant_link_new.png" width="50%">
+<img src="./images/assistant_preview.png" width="50%">
 
 That's it! You have a shareable web-based chatbot you can use to externally test your _skill_.
 
