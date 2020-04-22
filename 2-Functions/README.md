@@ -32,7 +32,7 @@ From there, first _**check the pulldown menu at the top right**_.
 
 **!!Make sure the selected location is the same region where you created your Watson Assistant service!!** So, if you used _**London**_ for your Watson Assistant, you should select _London_ also for your IBM Cloud Functions.
 
-Next, click `Start Creating`, then `Create Action`.
+Next, click `Start Creating`, then click the `Action` panel to create an action.
 
 ![](./images/functions_start_creating.png)
 
@@ -40,7 +40,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 **(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
-![](./images/get_workflow_token_new.png)
+![](./images/name_action_get_workflow.png)
 
 You'll then be transported to a code editor. Delete all of the default lines of code within the editor, and replace them with these:
 
