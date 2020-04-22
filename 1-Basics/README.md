@@ -25,7 +25,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 - Click on `Catalog`, then filter by clicking on `AI`
 - Select `Watson Assistant`
 
-![](./images/01-assistant-service.jpg)  
+![](./images/select_va_service.png)  
 
 **(2)** Create the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`.
 
