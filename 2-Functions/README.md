@@ -261,14 +261,14 @@ Click the `gear symbol` from the first "Assistant responds" row to open the resp
 
 The **only** thing you will need to replace here is `<your-get-workflow-token-endpoint>` with the endpoint information you copied for your Get Workflow Token action. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
-**NOTE!** **IMPORTANT!***
-Just use the part of the URL **AFTER** the **.../web/*** !!!
+**NOTE!** *****IMPORTANT!*****
+Just use the part of the URL **AFTER** the **.../web/** !!!
 
 It should look something like:
 
 `name.lastname_dev/default/Get%20Workflow%20Token.json`
 
-**NOTE2!** **IMPORTANT!***
+**NOTE2!** *****IMPORTANT!*****
 If your endpoint URL is missing `.json` from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
 
 After copying your end point URL to the configuration it should look similar to this:
@@ -284,11 +284,11 @@ Click "the 3 dots menu" to open JSON editor and replace `<your-start-address-cha
 `name.lastname_dev/default/Start%20Address%20Change%20Workflow.json`
 
 
-**NOTE!**
-Just use the part **AFTER** the **.../web/*** !!!
+**NOTE!** *****IMPORTANT!*****
+Just use the part **AFTER** the **.../web/** !!!
 
-**NOTE2!**
-If your endpoint URL is missing ".json" from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
+**NOTE2!** *****IMPORTANT!*****
+If your endpoint URL is missing `.json` from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
 
 ![](./images/assistant_conf_2_done_new3.png)
 
