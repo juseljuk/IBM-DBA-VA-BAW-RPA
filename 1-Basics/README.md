@@ -31,7 +31,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 For location keep / select **London**. Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 
-![](./images/02-assistant-service-create.jpg)
+![](./images/va_service_create.png)
 
 **(3)** Click on `Launch Watson Assistant`.
 
