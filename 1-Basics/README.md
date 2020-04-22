@@ -75,10 +75,11 @@ You can also use _**pattern matching**_ when creating _entity_ values. This is r
 
 A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user's input, plus _context_ from the application that uses _**Watson Assistant**_, to interact with the user and ultimately provide a useful response. Our _dialog_ tree should help the user choose a new mobile phone based on an existing preference or a characteristic important to the user.
 
-![](./images/bank_bot_try_it_new.png)
 
 ## Test your chatbot
 **(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester.
+
+![](./images/first_try.png)
 
 **(2)** Try and test your _Address change_ branch. It'll look like this:
 
