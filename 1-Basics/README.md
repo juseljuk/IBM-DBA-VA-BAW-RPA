@@ -27,13 +27,15 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 ![](./images/select_va_service.png)  
 
-**(2)** Create the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`.
-
-For location keep / select **London**. Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
+**(2)** For location keep / select **_London_** and make sure you have the `Lite` plan selected.
 
 ![](./images/va_service_create.png)
 
-**(3)** Click on `Launch Watson Assistant`.
+**(3)** Scroll down and name the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`. Then hit `Create`.
+
+![](./images/va_service_name.png)
+
+**(4)** Click on `Launch Watson Assistant`.
 
 ![](./images/03-assistant-service-launch.jpg)
 
