@@ -62,11 +62,11 @@ An _**intent**_ represents the purpose of a user's input. By recognising the int
 
 For this assistant we have currently implemented just a couple of intents. The one that we have also implemented a real dialog for is _#wants_to_inform_about_address_change_ (for understanding that the customer wants to notify us of address change).
 
-![](./images/bank_bot_overview_new.png)
+![](./images/overview_intents.png)
 
 An _**entity**_ represents a term or object in the user's input that provides **context** for a particular _intent_. If _intents_ represent _verbs_ (something a user wants to do), _entities_ represent _nouns_ (such as the object of, or the context for, an action).
 
-![](./images/entities_new2.png)
+![](./images/overview_entities.png)
 
 _**Watson Assistant**_ can also recommend _**synonyms**_ for your _**entity**_ values. The recommender finds related _synonyms_ based on contextual similarity extracted from a vast body of existing information, and uses natural language processing techniques to identify words similar to the existing _synonyms_ in your _entity_ value.
 
