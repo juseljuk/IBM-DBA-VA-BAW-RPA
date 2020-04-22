@@ -101,11 +101,11 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 **(1)** Select `Assistants` from the menu bar and `Create new`.
 
-![](./images/01-create-assistant.jpg)
+![](./images/create_assistant.png)
 
 **(2)** Add a **Name** and **Description** for your _Assistant_, leave the ``Enable Preview Link`` selected and then click `Create assistant`.
 
-![](./images/create_assistant_new.png)
+![](./images/create_assistant_2.png)
 
 **(3)** Next click `Add Dialog Skill` and select your `B2B Bank Bot` skill under "Add existing skill".
 
