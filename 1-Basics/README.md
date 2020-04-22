@@ -46,13 +46,13 @@ Due to time constrains in this session we will import an existing skill. This is
 
 Download and save the skill json-file from this link: https://ibm.box.com/v/IBM-DBA-VA-BAW-RPA-skill
 
-There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file in your computer and choose to import Everything.
+There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file and use it (import) to create a new dialog skill as shown in the pictures below.
 
-![](./images/va_create_skill.png)
+![](./images/va_create_skil.png)
 
-![](./images/selectLite.png)
+![](./images/select_dialog_skill.png)
 
-![](./images/import_skill_new.png)
+![](./images/import_skill.png)
 
 You will be directed to the chatbot content.
 
