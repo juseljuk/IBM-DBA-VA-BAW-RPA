@@ -61,7 +61,7 @@ On the left you will see a list of configurable commands that you can use. First
 
 If you double-click a command it will be added to your bots Action List under the action that is highlighted. If you add something by accident, you can delete a command by right-clicking the action and selecting "Delete".
 
-On the right-hand side you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
+On the right-hand side you will see a few bars, we are interested in ``Variable Manager``. Click on it to expand it.
 
 <img src="./images/variables.png" width="50%">
 
@@ -94,10 +94,10 @@ Your bot should run and YTJ web page should be opened in Internet Explorer (IE).
 
 __2.__ Next we add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id variable value to it.
 
-- Back in RPA editor window, drag and drop ``Object Cloning`` command under the second comment line.
+- Back in RPA editor window, drag and drop ``Object Cloning`` command and drop it **on the 2nd comment line** so that it is placed correctly under the 2nd comment line .
 - When the configuration window opens, select __"YTJ - Main page - Internet Explorer"__ for the Select Window -configuration.
 - Next click __Capture__ button __and keep your mouse button pressed down!__
-- While keeping your mouse button down, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Search by name or Business ID) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
+- `While keeping your mouse button down`, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Search by name or Business ID) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
 - When the configuration window opens, select __Set Text__ to "Select action to perform".
 - Click "Text to set" input field to move your cursor/focus to it.
 - Press __Function + F2__ [Fn+F2] to bring up "Insert variable" window, select __business_id__ and click "Insert".
