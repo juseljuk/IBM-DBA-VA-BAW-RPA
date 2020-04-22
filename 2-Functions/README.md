@@ -24,9 +24,9 @@ Some examples of how we might use IBM Cloud Functions from _**Watson Assistant**
 - Interacting with an external web service to get information. For example, you might check on the expected arrival time for a flight from an air traffic service.
 - Sending requests to an external application, such as a restaurant reservation site, to complete a simple transaction on the user's behalf.
 
-**(2)** Within your IBM Cloud account, go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then `Functions`.
+**(2)** Within your IBM Cloud account, go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then click on `Functions`.
 
-![](./images/08-find-functions.jpg)
+![](./images/open_functions.png)
 
 From there, first _**check the pulldown menu at the top right**_.
 

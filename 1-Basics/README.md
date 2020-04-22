@@ -117,7 +117,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 ![](./images/assistant_ready.png)
 
-## Create a _**Preview Link**_: a web widget to test your chatbot
+## Test your _**Preview Link**_: a web widget to test your chatbot
 The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Actually, when you create an _assistant_, a test web site is provisioned for you _automatically_. It has a simple chat widget interface that you can use to interact with your chatbot for testing purposes. You can also share the URL to this IBM-branded site with your team members.
 
 **(1)** Select the `Preview Link` that has already been created from `Integrations`:
