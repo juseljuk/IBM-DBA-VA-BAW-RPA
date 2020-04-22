@@ -30,13 +30,13 @@ Some examples of how we might use IBM Cloud Functions from _**Watson Assistant**
 
 From there, first _**check the pulldown menu at the top right**_.
 
-**!!Make sure the selected location is the same region where you created your Watson Assistant service!!** So, if you used _London_ for your Watson Assistant, you should select _London_ also for your IBM Cloud Functions.
+**!!Make sure the selected location is the same region where you created your Watson Assistant service!!** So, if you used _**London**_ for your Watson Assistant, you should select _London_ also for your IBM Cloud Functions.
 
 Next, click `Start Creating`, then `Create Action`.
 
-![](./images/09-functions-start-creating.jpg)
+![](./images/functions_start_creating.png)
 
-![](./images/10-create-action.jpg)
+![](./images/create_action.png)
 
 **(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
