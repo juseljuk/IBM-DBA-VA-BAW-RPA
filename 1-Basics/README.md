@@ -99,7 +99,7 @@ Build a web-hosted chat widget that will allow you to test the _**Watson Assista
 
 An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that manages the flow of information between your _skills_ and your users. _Assistants_ also allow you to create _**integrations**_ that publish your chatbot to the channels your customers will typically go to for help, e.g. _Slack_, _Facebook Messenger_, _Wordpress_.
 
-**(1)** Select `Assistants` from the menu bar and `Create new`.
+**(1)** Select `Assistants` from the left-hand side menu bar and click `Create assistant`.
 
 ![](./images/create_assistant.png)
 
@@ -109,7 +109,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 **(3)** Next click `Add Dialog Skill` and select your `B2B Bank Bot` skill under "Add existing skill".
 
-![](./images/03-add-dialog-skill-2.jpg)
+![](./images/add_dialog_skill.png)
 
 <img src="./images/skill_added.png" width="50%">
 
