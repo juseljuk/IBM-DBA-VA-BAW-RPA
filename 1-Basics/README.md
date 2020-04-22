@@ -42,14 +42,13 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 ## Understanding user intent: create _**intents**_ and _**entities**_
 **(1)** The first thing we need to do in **_Watson Assistant_** is create a _**Skill**_. A _**skill**_ contains the training data and machine learning logic that enables your chatbot to understand and help users and customers.
 
+Due to time constrains in this session we will import an existing skill. This is basic B2B bank support chatbot conversation, where we will add in the integration to Business Automation Workflow.  
 
-Due to time contrains in this session we will import an existing skill. This is basic B2B bank support chatbot conversation, where we will add in the integration to Business Automation Workflow.  
-
-Download the skill from this link: https://ibm.box.com/v/IBM-DBA-VA-BAW-RPA-skill
+Download and save the skill json-file from this link: https://ibm.box.com/v/IBM-DBA-VA-BAW-RPA-skill
 
 There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file in your computer and choose to import Everything.
 
-![](./images/05-create-skill-new.jpg)
+![](./images/va_create_skill.png)
 
 ![](./images/selectLite.png)
 
