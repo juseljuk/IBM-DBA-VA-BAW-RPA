@@ -24,7 +24,7 @@ If you do not see a message about successful activation / you see an error massa
 
 Check these first:
 
-- Your virtual BAW environment is running (you can access the environment as you did in lab 3 and 4).
+- Your virtual BAW environment is running (you can access the environment as you did in Lab 3).
 - The **port number** you are using in your IBM Cloud Functions _action_ matches with the one you got from your instructor (Lab 2, Setup IBM Cloud Functions: **Step 4**).
 - The **code** for your action is exactly as in the instructions (Lab 2, Setup IBM Cloud Functions: **Step 3**).
 
