@@ -109,7 +109,7 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 Your javascript section for the external ip and port should look something like this:
 
-![](./images/set_ip_and_port.png)
+![](./images/set_ip_and_ports.png)
 
 Now hit `Save`.
 
