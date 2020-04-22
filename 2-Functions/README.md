@@ -226,7 +226,7 @@ As you've already seen, you need to pass security credentials between services a
 
 ![](./images/namespace.png)
 
-**(2)** Next you need to open your _**Watson Assistant**_ _skill_. You might already have it open in your browser tab from lab 1, but if not, you'll need to open it again. Here's brief instructions to do that:
+**(2)** Next you need to open your _**Watson Assistant**_ _skill_. You might already have it open in your browser tab from Lab 1, but if not, you'll need to open it again. Here's brief instructions to do that:
 - Click the navigation (hamburger) menu in the left upper corner. This will open the navigation menu.
 - Click `Watson` (the last item in the menu).
 - Expand `Watson Services`from the left-hand side menu and click `Existing Services`.
@@ -234,7 +234,7 @@ As you've already seen, you need to pass security credentials between services a
 - Click `Launch Watson Assistant`.
 - Select `Skills` from the left-hand side navigation menu and finally click your `B2B Bank Bot` to open your skill in the editor.
 
-Move to `Dialog`of your _**Watson Assistant**_ _skill_ and you will see a node called `Welcome`. Click it to open its configuration.
+Move to `Dialog`of your skill and you will see a node called `Welcome`. Click it to open its configuration.
 
 Under the 'Then set context' there is a variable called `$private` with the value below:
 ```Javascript
@@ -249,10 +249,9 @@ Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in 
 Your value for the $private variable should look something like:
 **{"myCredentials":{"api_key":"16fcbbb5-8124-435f-8326-38a213704870:i3ejktRgIPu2svXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}**
 
-**NOTE!!** Make sure to remove also the "<" and ">" signs from the template. So that you API key is just surrounded by quotation marks.
+**NOTE!!** Make sure to remove also the "<" and ">" signs from the template. Your API key should be just surrounded by quotation marks.
 
-Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
-
+Now regardless of integration type, your chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions action**_.
 
 **(3)** Find the node called _**Get Workflow Token**_ and click to open its configuration.
 
@@ -262,20 +261,19 @@ Click the `gear symbol` from the first "Assistant responds" row to open the resp
 
 The **only** thing you will need to replace here is `<your-get-workflow-token-endpoint>` with the endpoint information you copied for your Get Workflow Token action. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
-**NOTE!**
+**NOTE!** **IMPORTANT!***
 Just use the part of the URL **AFTER** the **.../web/*** !!!
 
 It should look something like:
 
 `name.lastname_dev/default/Get%20Workflow%20Token.json`
 
-**NOTE2!**
-If your endpoint URL is missing ".json" from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
+**NOTE2!** **IMPORTANT!***
+If your endpoint URL is missing `.json` from the end, **you need to add it!!** Also make sure to remove the "<" and ">" signs from the template. Use just the quotation marks to surround your URL as shown in the picture below.
 
 After copying your end point URL to the configuration it should look similar to this:
 
 ![](./images/set_assistant_config_2.png)
-
 
 **(4)** Find the node called _**Thank you for information**_ and click to open its configuration.
 
