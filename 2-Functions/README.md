@@ -38,11 +38,11 @@ Next, click `Start Creating`, then click the `Action` panel to create an action.
 
 ![](./images/create_action.png)
 
-**(3)** Call your new action `Get Workflow Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
+**(3)** Call your new action `Get Workflow Token`, ensure that `Runtime` of **Node.js 10** is selected and hit `Create`.
 
 ![](./images/name_action_get_workflow.png)
 
-You'll then be transported to a code editor. Delete all of the default lines of code within the editor, and replace them with these:
+You'll then be transported to a code editor. Delete all of the default lines of code within the editor, and replace them with these (copy-paste):
 
 ```Javascript
 /**
@@ -106,6 +106,10 @@ This code will call the managed workflow (running on IBM Business Automation Wor
 
 - Replace `your_external_ip` with the value of your environment ip (DNS) given by your instructor / you got from Lab 0. **Note that it needs to be WITHOUT the quotation marks, e.g. _services-emea.skytap.com_, NOT _"services-emea.skytap.com"_**.
 - Replace `your_external_port` with the value of your environment port given by your instructor / you got from Lab 0. **Note that your port number might be 4 or 5 numbers long!**.
+
+Your javascript section for the external ip and port should look something like this:
+
+![](./images/set_ip_and_port.png)
 
 Now hit `Save`.
 
