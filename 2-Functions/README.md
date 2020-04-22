@@ -115,7 +115,7 @@ Now hit `Save`.
 
 ![](./images/get-token-code-complete.jpg)
 
-Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `Save`.
+Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then click `Save`.
 
 ![](./images/web_action_workflow_token.png)
 
@@ -204,9 +204,7 @@ This code will use the authentication token from the previous action and call th
 
 Now hit `Save`.
 
-Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `Save`.
-
-![](./images/web_action_address_change.png)
+Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then click `Save`.
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look something like this:
 
@@ -224,11 +222,19 @@ If you are still in Actions, click **Functions** to get to your main Functions p
 ## Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
 As you've already seen, you need to pass security credentials between services and applications in order to use them. In order to call _**IBM Cloud Functions**_ from within _**Watson Assistant**_ _dialogs_ we need to understand their credentials and encode them correctly.
 
-**(1)** Get your _**IBM Cloud Function**_ **API Key** from the `Namespace Settings` option in the left side meny. There's a copy icon available to copy the key to the clipboard.
+**(1)** Get your _**IBM Cloud Function**_ **API Key** from the `Namespace Settings` option in the left-hand side menu. There's a copy icon available to copy the key to the clipboard.
 
 ![](./images/namespace.png)
 
-**(2)** In your _**Watson Assistant**_ _skill_, you will see a node called `Welcome`. Click it to open its configuration.
+**(2)** Next you need to open your _**Watson Assistant**_ _skill_. You might already have it open in your browser tab from lab 1, but if not, you'll need to open it again. Here's brief instructions to do that:
+- Click the navigation (hamburger) menu in the left upper corner. This will open the navigation menu.
+- Click `Watson` (the last item in the menu).
+- Expand `Watson Services`from the left-hand side menu and click `Existing Services`.
+- Find your Watson Assistant Service that you created in Lab 1 and click the name of the service to open it.
+- Click `Launch Watson Assistant`.
+- Select `Skills` from the left-hand side navigation menu and finally click your `B2B Bank Bot` to open your skill in the editor.
+
+Move to `Dialog`of your _**Watson Assistant**_ _skill_ and you will see a node called `Welcome`. Click it to open its configuration.
 
 Under the 'Then set context' there is a variable called `$private` with the value below:
 ```Javascript
