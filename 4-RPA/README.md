@@ -134,7 +134,7 @@ Once the bot finishes, you should see a similar page in your IE browser window:
 
 How did the bot know to use a valid business id to search for IBM Finland? This is because the variables that we had already prepared for you had a value of __0195876-3__ defined as default value for business_id variable (that is used when its not otherwise set).
 
-*Leave the browser window open move back to your RPA editor window.*
+***Leave the browser window open and move back to your RPA editor window.***
 
 __4.__ The robot needs to click the first search result (the link "0195876-3" in the Search results HTML-table) in order to see more detailed information about company we were searching for. Go ahead and add this action under the 4th comment row in your action list. I would do this by using the __Smart Recorder__ (as we did in the previous step), but you can choose to use __Object Cloning__ command manually as we did in the 2nd step. Your choice :) Ask your instructor to help out if needed.
 
@@ -157,13 +157,13 @@ __NOTE!__ The Object Cloning command records many different attributes for the o
 
 __5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id that we are using to conduct the search (different companies may have different amount of data), we need to make our data extraction dynamic and that takes a bit more time.
 
-That's why we have already implemented a "data extraction bot" that you can use to do data extraction for you. It's located under the IBM DBA with Virtual Agent folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
+That's why we have already implemented a "data extraction bot" that you can use to do the data extraction for you. It's located under the IBM DBA with Virtual Agent folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
 
 - Add __Run Task__ command to your RPA editors action list, under the 5th comment row.
 
 ![](./images/add_runtask_new.png)
 
-- When Run Task configuration window open click __Browse__ to select the above mentioned helper task (IBM DBA with Virtual Agent --> Helpers --> Extract Data from YTJ HTML Table.atmx).
+- When Run Task configuration window open click __Browse__ to select the above mentioned helper task (IBM DBA with Virtual Agent --> Helpers --> **Extract Data from YTJ HTML Table.atmx**).
 - Then click the __Variable__ option selection and press __Quick Map__ button to map variables beetween the task bot we're now implementing and the helper bot. Click __OK__ when the message box is shown. You should have 5 variables mapped. Your Run Task configuration window should look like this:
 
 <img src="./images/conf_runtask_new.png" width="50%">
