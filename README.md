@@ -30,6 +30,8 @@ Workflow consists of both automated and manual tasks. _Robotic Process Automatio
 
 ## Blue Demos Environment
 If you are running this exercise using yourself reserved IBM Blue Demos environment, you need to complete the _**LAB 0: Setting Up Your Environment**_. **NOTE!** If you are doing this exercise in a class room session with an instructor, you can skip this and go directly to LAB 1. Your instructor will provide separate instructions to access your virtual environment and some of the environment details that you need in LAB 2.
+
+**NOTE!** You need to be an IBM business partner to access the Blue Demos site and to provision an environment for you.
   - [LAB 0: Setting Up Your Environment](./BlueDemos)
 
 ## Virtual Assistant
